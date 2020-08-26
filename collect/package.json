@@ -1,0 +1,42 @@
+{
+  "name": "collect",
+  "version": "2.3.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "node scripts/genversion.js",
+    "build": "node scripts/build.js",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "electron-settings": "^3.2.0",
+    "express": "^4.16.2",
+    "fourier-transform": "^1.1.2",
+    "gsap": "^2.0.2",
+    "jStat": "^1.8.5",
+    "mathjs": "^6.0.3",
+    "ml-knn": "^3.0.0",
+    "npm": "^6.12.0",
+    "opn": "^5.4.0",
+    "serialport": "^6.2.1",
+    "sudo-prompt": "^8.2.3",
+    "window-function": "^2.1.0",
+    "winreg": "^1.2.4",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "archiver": "^3.0.0",
+    "electron": "^3.0.10",
+    "electron-packager": "^13.0.0",
+    "electron-rebuild": "^1.8.2",
+    "fs": "0.0.1-security",
+    "fs-extra": "^7.0.1",
+    "path": "^0.12.7",
+    "pkg": "^4.3.4"
+  },
+  "bin": "app.js",
+  "pkg": {
+    "scripts": "lib/**/*.js"
+  }
+}

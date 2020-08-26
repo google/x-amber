@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "collect recording",
+    "description": "specification for recording file header",
+    "type": "object",
+    "properties": {
+        "channelCount": {
+            "type": "number",
+            "description": "number of channels in each row of data",
+        },
+        "channels": {
+            "type": "array",
+            "description": "channel description",
+            "item": { "$ref": "#/definitions/channel" },
+        },
+        "timestampIndex": {
+            "type": "number",
+            "description": "0-based column index for timestamp data in a row",
+        },
+        "markIndex": {
+            "type": "number",
+            "description": "0-based column index for mark data in a row",
+        },
+        "unit": {
+            "type": "string",
+            "description": "channel data unit ('microvolt' or 'adc')",
+        },
+        "sampleRate": {
+            "type": "string",
+            "description": "channel data sample rate in hz",
+        }
+        "collectVersion": {
+            "type": "string",
+            "description": "collect software version that generated this file",
+        },
+        "bioampId": {
+            "type": "string",
+            "description": "identifier for the bioamp hardware used",
+        },
+        "bioampVersion": {
+            "type": "string",
+            "description": "bioamp software version",
+        },
+        "datetime": {
+            "type": "string",
+            "description": "date and time when the recording is started in ISO 8601 format",
+        },
+        "site": {
+            "type": "string",
+            "description": "site that generated the recording",
+        },
+        "task": {
+            "type": "string",
+            "description": "task performed during the recording"
+        },
+        "participantId": {
+            "type": "string",
+            "description": "particpant identifier for the recording",
+        },
+        "session": {
+            "type": "string",
+            "description": "session number for the recording",
+        }
+    },
+    "definitions": {
+        "channel": {
+            "type": "object",
+            "properties": {
+                "gain": {
+                    "type": "number",
+                    "description": "adc gain value",
+                },
+                "index": {
+                    "type": "number",
+                    "description": "0-based column index for this channel's data in a row",
+                },
+                "isOn": {
+                    "type": "boolean",
+                    "description": "channel enabled",
+                },
+                "label": {
+                    "type": "string",
+                    "description": "channel label",
+                }
+            }
+        },
+    },
+    "required": [ "channelCount", "channels", "timestampIndex", "markIndex", "unit", "collectVersion" ],
+}

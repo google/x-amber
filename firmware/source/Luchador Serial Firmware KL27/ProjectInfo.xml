@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright : 2012 Freescale, Inc. All Rights Reserved.
+
+  This configuration file is a standard interchange file that's format is maintained
+  by Freescale, Inc. The configuration file is a derivative work
+  of the Processor Expert Software technology licensed for use by customers
+  as defined as SOFTWARE in the product's End User License Agreement. This file
+  and format are free to use and distribute for read-only purposes. You do not have
+  the right to create these files or modify this format or use for any purposes other
+  than interchange with the Processor Expert Software technology.
+
+  THIS SOFTWARE IS PROVIDED "AS IS".
+
+  NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT
+  LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE APPLY TO THIS SOFTWARE. IN NO EVENT WILL FREESCALE BE LIABLE, WHETHER
+  IN CONTRACT, TORT, OR OTHERWISE, FOR ANY INCIDENTAL, SPECIAL, INDIRECT,
+  CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR
+  ANY LOSS OF USE, LOSS OF TIME, INCONVENIENCE, COMMERCIAL LOSS, OR LOST PROFITS,
+  SAVINGS, OR REVENUES TO THE FULL EXTENT SUCH MAY BE DISCLAIMED BY LAW.
+
+-->
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProjectInfoDescription.xsd">
+  <PROCESSOR>
+    <DeviceID>MKL27Z256xxx4</DeviceID>
+    <CoreNum>1</CoreNum>
+    <Cores>
+      <Core>
+        <CoreSet>Cortex-M0+</CoreSet>
+      </Core>
+    </Cores>
+    <SRAMsize>32k</SRAMsize>
+    <FLASHsize>256k</FLASHsize>
+  </PROCESSOR>
+  <PATHS>
+    <IncludePaths>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\sim\MKL27Z4\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\clock\MKL27Z4\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\inc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\osa\inc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\include\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\src\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\inc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\startup\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\SDK\platform\devices\MKL27Z4\startup\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\</Path>
+    </IncludePaths>
+    <SourceCodePaths>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\startup\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\adc16\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\dma\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\gpio\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\lpuart\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\pit\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\rtc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\spi\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\adc16\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\dma\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\dmamux\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\gpio\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\lpuart\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\mcglite\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\osc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\pit\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\port\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\rtc\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\sim\MKL27Z4\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\spi\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\uart\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\osa\src\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\clock\MKL27Z4\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\clock\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\interrupt\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\src\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\EEG-SPI\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\LEDS\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Serial\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\WiFi\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Static_Code\System\</Path>
+      <Path>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\startup\gcc\</Path>
+    </SourceCodePaths>
+  </PATHS>
+  <FILES>
+    <GeneratedCs>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\Adc.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\AuxGpio.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\Cpu.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\DataUart.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\GpioEeg.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\HardwareVersion.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\MarkUart.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\RgbLed.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\StatusLed.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\clockMan1.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\dmaController1.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\hardware_init.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\osa1.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\pin_mux.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\pitTimer1.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\spiCom1.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\startup\system_MKL27Z4.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\startup.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\adc16\fsl_adc16_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\adc16\fsl_adc16_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\dma\fsl_dma_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\dma\fsl_dma_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\gpio\fsl_gpio_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\gpio\fsl_gpio_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\lpuart\fsl_lpuart_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\lpuart\fsl_lpuart_dma_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\lpuart\fsl_lpuart_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\pit\fsl_pit_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\pit\fsl_pit_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\rtc\fsl_rtc_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\spi\fsl_spi_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\spi\fsl_spi_master_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\spi\fsl_spi_shared_function.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\src\spi\fsl_spi_slave_driver.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\adc16\fsl_adc16_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\dma\fsl_dma_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\dmamux\fsl_dmamux_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\gpio\fsl_gpio_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\lpuart\fsl_lpuart_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\mcglite\fsl_mcglite_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\mcglite\fsl_mcglite_hal_modes.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\osc\fsl_osc_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\pit\fsl_pit_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\port\fsl_port_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\rtc\fsl_rtc_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\sim\MKL27Z4\fsl_sim_hal_MKL27Z4.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\spi\fsl_spi_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\uart\fsl_uart_hal.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\osa\src\fsl_os_abstraction_bm.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\clock\MKL27Z4\fsl_clock_MKL27Z4.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\clock\fsl_clock_manager.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\clock\fsl_clock_manager_common.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\interrupt\fsl_interrupt_manager.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\src\fsl_debug_console.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\src\fsl_misc_utilities.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\src\print_scan.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\EEG-SPI\eeg.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\EEG-SPI\spi.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Events.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\LEDS\leds.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Queue.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Serial\cli.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Serial\comm_protocol.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Serial\serial.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\WiFi\wifi.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\build.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\main.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\utils.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\version.c</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Static_Code\System\PE_low_level_init.c</PathName>
+    </GeneratedCs>
+    <GeneratedHs>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\Adc.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\AuxGpio.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\Cpu.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\DataUart.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\GpioEeg.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\HardwareVersion.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\MarkUart.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\PE_low_level_init.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\RgbLed.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\SDK\platform\devices\MKL27Z4\startup\system_MKL27Z4.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\StatusLed.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\board.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\clockMan1.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\dmaController1.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\osa1.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\pin_mux.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\pitTimer1.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Generated_Code\spiCom1.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\arm_common_tables.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\arm_const_structs.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\arm_math.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\core_cm0plus.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\core_cmFunc.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\core_cmInstr.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\CMSIS\Include\core_cmSimd.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\include\MKL27Z4.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\include\MKL27Z4_extension.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\include\MKL27Z4_features.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\include\fsl_bitaccess.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\fsl_device_registers.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\startup.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_adc16_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_dma_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_dma_request.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_gpio_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_lpuart_dma_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_lpuart_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_pit_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_spi_master_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_spi_shared_function.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\drivers\inc\fsl_spi_slave_driver.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_adc16_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_dma_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_dmamux_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_gpio_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_lpuart_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_mcglite_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_mcglite_hal_modes.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_osc_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_pit_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_port_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_rtc_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_sim_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_spi_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\inc\fsl_uart_hal.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\hal\src\sim\MKL27Z4\fsl_sim_hal_MKL27Z4.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\osa\inc\fsl_os_abstraction.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\osa\inc\fsl_os_abstraction_bm.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\inc\fsl_clock_manager.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\inc\fsl_interrupt_manager.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\system\src\clock\MKL27Z4\fsl_clock_MKL27Z4.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\inc\fsl_debug_console.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\inc\fsl_misc_utilities.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\utilities\src\print_scan.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\EEG-SPI\eeg.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\EEG-SPI\spi.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Events.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\LEDS\leds.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Queue.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Serial\cli.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Serial\comm_protocol.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\Serial\serial.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\WiFi\wifi.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\settings.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\utils.h</PathName>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\Sources\version.h</PathName>
+    </GeneratedHs>
+    <GeneratedASMs>
+      <PathName>D:\Work\Google Drive\Luchador\Git3\Software\Luchador Serial Firmware KL27\SDK\platform\devices\MKL27Z4\startup\gcc\startup_MKL27Z4.S</PathName>
+    </GeneratedASMs>
+  </FILES>
+  <OPTIONS>
+    <BuildOptions>
+      <CCoptList>
+        <Option>-D CPU_MKL27Z256VLH4</Option>
+        <Option>-D FSL_OSA_BM_TIMER_CONFIG=2</Option>  
+      </CCoptList>
+    </BuildOptions>
+  </OPTIONS>
+</export>

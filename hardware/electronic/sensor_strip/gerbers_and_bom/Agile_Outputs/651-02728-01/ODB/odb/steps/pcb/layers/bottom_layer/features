@@ -1,0 +1,21 @@
+#Layer_Physical_Order=2
+#Layer_Color=16711680
+#
+#Feature symbol names
+#
+
+#
+#Feature attribute names
+#
+
+#
+#Layer features
+#
+S P 0
+OB 0.4 0 I
+OS 0 0
+OS 0 0.25
+OS 0.4 0.25
+OS 0.4 0
+OE
+SE

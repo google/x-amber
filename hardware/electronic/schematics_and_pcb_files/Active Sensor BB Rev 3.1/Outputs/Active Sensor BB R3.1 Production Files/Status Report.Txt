@@ -1,0 +1,10 @@
+Output: Design Rules Check
+Type  : DRC
+From  : PCB Document [Active Sensor BB.PcbDoc]
+   Generated File[Active Sensor BB.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 7:52:03 PM On 12/18/2018

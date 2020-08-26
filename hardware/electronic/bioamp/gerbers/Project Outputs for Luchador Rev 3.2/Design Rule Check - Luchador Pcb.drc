@@ -1,0 +1,47 @@
+Protel Design System Design Rule Check
+PCB File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Luchador Rev 3.2b\Pcb\Luchador Pcb.PcbDoc
+Date     : 8/9/2019
+Time     : 12:51:02 PM
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+   Violation between Clearance Constraint: (Collision < 6mil) Between Arc (3056mil,4335mil) on Keep-Out Layer And Pad J8-M(3056mil,4335mil) on Multi-Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Arc (3056mil,4460mil) on Keep-Out Layer And Pad J8-M(3056mil,4460mil) on Multi-Layer 
+   Violation between Clearance Constraint: (187550.677mil < 6mil) Between Arc (3156mil,4335mil) on Keep-Out Layer And Pad J8-M(3156mil,4335mil) on Multi-Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Arc (3256mil,4335mil) on Keep-Out Layer And Pad J8-M(3256mil,4335mil) on Multi-Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Arc (3256mil,4460mil) on Keep-Out Layer And Pad J8-M(3256mil,4460mil) on Multi-Layer 
+Rule Violations :5
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('PWR GND') Or  InNamedPolygon('BOT GND') Or  InNamedPolygon('SL2 GND') Or  InNamedPolygon('SL1 GND') Or  InNamedPolygon('TOP GND')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (InNamedPolygon('-2.5V')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=100mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 5
+Waived Violations : 0
+Time Elapsed        : 00:00:03

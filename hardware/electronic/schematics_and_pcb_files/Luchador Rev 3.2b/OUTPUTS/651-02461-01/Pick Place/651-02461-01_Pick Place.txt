@@ -1,0 +1,258 @@
+Altium Designer Pick and Place Locations
+G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Luchador Rev 3.2b\Outputs\651-02461-01\Pick Place\651-02461-01_Pick Place.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       04/06/19
+Time:       22:49
+Revision:   Not in VersionControl
+Variant:    Variant of Luchador Rev 3.2 w Battery
+Units used: mil
+
+Designator Comment          Layer       Footprint       Center-X(mil) Center-Y(mil) Rotation Description                     
+JP2        "PSM ENABLE"     BottomLayer 61300211121     1769.000      2994.000      360      "Header, 2-Pin"                 
+J3         10268-6212PC     TopLayer    5749070-7       5424.508      3168.756      270      ""                              
+R10        "Res 0805"       TopLayer    0402R           2682.480      2920.315      180      Resistor                        
+R9         "Res 0805"       TopLayer    0402R           2013.189      3432.126      360      Resistor                        
+R8         "Res 0805"       TopLayer    0402R           2013.189      3471.496      360      Resistor                        
+D2         Component_2      TopLayer    ASMB-TTB0-0A3A2 1535.055      3166.000      90       ""                              
+JP1        "PSM ENABLE"     BottomLayer 61300211121     731.000       3000.000      360      "Header, 2-Pin"                 
+D20        TPD1E0B04DPYR    BottomLayer 0402D           4276.968      3803.189      270      ""                              
+D7         TPD1E0B04DPYR    BottomLayer 0402D           4421.654      1916.378      180      ""                              
+D6         TPD1E0B04DPYR    BottomLayer 0402D           4542.717      3336.654      270      ""                              
+C9D        "Cap Pol1"       BottomLayer 1411T           3861.614      1886.850      180      "Polarized Capacitor (Radial)"  
+C9C        "Cap Pol1"       BottomLayer 1411T           3861.614      2556.142      180      "Polarized Capacitor (Radial)"  
+C9B        "Cap Pol1"       BottomLayer 1411T           3861.614      3215.591      180      "Polarized Capacitor (Radial)"  
+C9A        "Cap Pol1"       BottomLayer 1411T           3861.614      3884.882      180      "Polarized Capacitor (Radial)"  
+R38        "RES 8X"         BottomLayer 1506R           4570.276      2546.299      270      Resistor                        
+R1D        "RES 8X"         BottomLayer 1506R           4570.276      2241.181      270      Resistor                        
+R1C        "RES 8X"         BottomLayer 1506R           4570.276      2900.630      270      Resistor                        
+R1B        "RES 8X"         BottomLayer 1506R           4570.276      3569.921      270      Resistor                        
+R1A        "RES 8X"         BottomLayer 1506R           4574.212      4229.370      270      Resistor                        
+C52        50V              BottomLayer 1206C-ARRAY     4412.795      2473.465      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C51        50V              BottomLayer 1206C-ARRAY     4412.795      2613.228      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2D        50V              BottomLayer 1206C-ARRAY     4412.795      2298.268      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2C        50V              BottomLayer 1206C-ARRAY     4412.496      2966.756      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2B        50V              BottomLayer 1206C-ARRAY     4412.795      3640.787      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2A        50V              BottomLayer 1206C-ARRAY     4422.638      4292.362      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1D        50V              BottomLayer 1206C-ARRAY     4412.795      2160.472      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1C        50V              BottomLayer 1206C-ARRAY     4412.795      2829.764      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1B        50V              BottomLayer 1206C-ARRAY     4412.795      3499.055      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1A        50V              BottomLayer 1206C-ARRAY     4422.638      4156.535      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+U11        REF3025AIDBZR    TopLayer    SOT-23          2150.984      2605.354      0        ""                              
+U5         TSV321RILT       BottomLayer SOT-23-5        4407.283      3914.409      90       ""                              
+R103       "Res 0805"       TopLayer    0402R           2879.331      2920.315      180      Resistor                        
+R102       "Res 0805"       TopLayer    0402R           2780.905      3333.701      90       Resistor                        
+R101       "Res 0805"       TopLayer    0402R           2682.480      2880.945      180      Resistor                        
+R100       "Res 0805"       TopLayer    0402R           2682.480      2841.575      180      Resistor                        
+R99        "Res 0805"       BottomLayer 0402R           2288.780      3087.638      90       Resistor                        
+R98        "Res 0805"       TopLayer    0402R           2682.480      2802.205      360      Resistor                        
+R97        "Res 0805"       TopLayer    0402R           2682.480      2762.835      360      Resistor                        
+R66        "Res 0805"       TopLayer    0402R           1885.236      2034.488      270      Resistor                        
+R65        "Res 0805"       TopLayer    0402R           2288.780      2595.512      90       Resistor                        
+R64        "Res 0805"       TopLayer    0402R           2239.567      2388.819      360      Resistor                        
+R63        "Res 0805"       TopLayer    0402R           2239.567      2349.449      180      Resistor                        
+R62        "Res 0805"       TopLayer    0402R           1954.134      2034.488      270      Resistor                        
+R61        "Res 0805"       TopLayer    0402R           2121.457      2349.449      360      Resistor                        
+R60        "Res 0805"       TopLayer    0402R           2013.189      2034.488      270      Resistor                        
+R59        "Res 0805"       BottomLayer 0402R           2121.457      2310.079      360      Resistor                        
+R58        "Res 0805"       BottomLayer 0402R           2249.409      2310.079      90       Resistor                        
+R57        "Res 0805"       TopLayer    0402R           2072.244      2034.488      270      Resistor                        
+R56        "Res 0805"       TopLayer    0402R           2288.780      2044.331      270      Resistor                        
+R55        "Res 0805"       BottomLayer 0402R           2288.780      2182.126      270      Resistor                        
+R54        "Res 0805"       TopLayer    0402R           2139.981      2034.488      270      Resistor                        
+R53        "Res 0805"       TopLayer    0402R           2249.409      2044.331      90       Resistor                        
+R52        "Res 0805"       BottomLayer 0402R           2249.409      2132.913      90       Resistor                        
+R51        "Res 0805"       TopLayer    0402R           2249.410      2132.913      270      Resistor                        
+R50        "Res 0805"       TopLayer    0402R           2820.276      3422.283      270      Resistor                        
+R49        "Res 0805"       TopLayer    0402R           2780.905      3422.283      90       Resistor                        
+R48        "Res 0805"       BottomLayer 0402R           1895.079      2378.976      360      Resistor                        
+R47        "Res 0805"       TopLayer    0402R           1865.551      2251.024      90       Resistor                        
+R46        "Res 0805"       TopLayer    0402R           1826.181      2251.024      270      Resistor                        
+R45        "Res 0805"       BottomLayer 0402R           1806.496      2123.071      360      Resistor                        
+R44        "Res 0805"       BottomLayer 0402R           1717.913      2123.071      360      Resistor                        
+R43B       "Res 0805"       TopLayer    0402R           782.874       4121.102      0        Resistor                        
+R43A       "Res 0805"       TopLayer    0402R           782.874       2152.598      360      Resistor                        
+R42B       "Res 0805"       TopLayer    0402R           782.874       4180.158      0        Resistor                        
+R42A       "Res 0805"       TopLayer    0402R           782.874       2211.653      360      Resistor                        
+R41B       "Res 0805"       TopLayer    0402R           891.142       4071.890      0        Resistor                        
+R41A       "Res 0805"       TopLayer    0402R           881.299       2723.465      360      Resistor                        
+R40B       "Res 0805"       TopLayer    0402R           1547.685      3694.000      0        Resistor                        
+R40A       "Res 0805"       TopLayer    0402R           1954.134      3067.953      360      Resistor                        
+R39        "Res 0805"       BottomLayer 0402R           4414.764      1965.591      360      Resistor                        
+R37        "Res 0805"       TopLayer    0402R           3902.953      2556.142      270      Resistor                        
+R36        "Res 0805"       BottomLayer 0402R           4424.606      3343.543      360      Resistor                        
+R35        "Res 0805"       TopLayer    0402R           3676.575      2369.134      270      Resistor                        
+R34        "Res 0805"       TopLayer    0402R           3901.000      3209.315      270      Resistor                        
+R33        "Res 0805"       TopLayer    0402R           3676.575      3038.425      270      Resistor                        
+R32        "Res 0805"       TopLayer    0402R           3902.953      3875.039      270      Resistor                        
+R31        "Res 0805"       TopLayer    0402R           3686.417      3707.716      270      Resistor                        
+R30        "Res 0805"       BottomLayer 0402R           4287.000      4429.685      90       Resistor                        
+R29        "Res 0805"       TopLayer    0402R           3902.953      4544.331      270      Resistor                        
+R28        "Res 0805"       BottomLayer 0402R           4267.126      3894.724      270      Resistor                        
+R7         "Res 0805"       BottomLayer 0402R           1521.063      2103.386      90       Resistor                        
+R6         "Res 0805"       BottomLayer 0402R           1580.118      2103.386      90       Resistor                        
+R5         "Res 0805"       BottomLayer 0402R           1639.173      2103.386      90       Resistor                        
+R3         "Res 0805"       BottomLayer 0402R           5402.953      4548.268      360      Resistor                        
+R2D        "Res 0805"       TopLayer    0402R           3616.000      2106.315      90       Resistor                        
+R2C        "Res 0805"       TopLayer    0402R           3615.000      2771.685      90       Resistor                        
+R2B        "Res 0805"       TopLayer    0402R           3618.000      3433.315      90       Resistor                        
+R2A        "Res 0805"       TopLayer    0402R           3616.000      4120.315      90       Resistor                        
+D31        STATUS           TopLayer    0402L-ORANGE    2967.913      2920.315      360      "Typical INFRARED GaAs LED"     
+D9B        RX               TopLayer    0402L-ORANGE    694.291       4121.102      180      "Typical INFRARED GaAs LED"     
+D9A        RX               TopLayer    0402L-ORANGE    694.291       2152.598      180      "Typical INFRARED GaAs LED"     
+D8B        TX               TopLayer    0402L-ORANGE    694.291       4180.158      180      "Typical INFRARED GaAs LED"     
+D8A        TX               TopLayer    0402L-ORANGE    694.291       2211.653      180      "Typical INFRARED GaAs LED"     
+D1D        LED0_1           TopLayer    0402L-ORANGE    3637.205      2191.968      360      "Typical INFRARED GaAs LED"     
+D1C        LED0_1           TopLayer    0402L-ORANGE    3637.205      2851.417      360      "Typical INFRARED GaAs LED"     
+D1B        LED0_1           TopLayer    0402L-ORANGE    3637.205      3520.709      360      "Typical INFRARED GaAs LED"     
+D1A        LED0_1           TopLayer    0402L-ORANGE    3637.205      4190.000      360      "Typical INFRARED GaAs LED"     
+C102       50V              TopLayer    0603C           2416.732      4544.331      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C101       50V              TopLayer    0402C           2820.276      3333.701      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C100       50V              BottomLayer 0402C           2377.362      2989.213      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C99        50V              BottomLayer 0402C           2377.362      3333.701      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C98        50V              BottomLayer 0402C           2249.409      3127.008      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C97        50V              BottomLayer 0603C           2495.472      3136.850      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C96        50V              BottomLayer 0402C           2367.520      3087.638      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C95        50V              BottomLayer 0402C           2328.150      3087.638      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C94        50V              BottomLayer 0603C           2416.732      3087.638      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C77        50V              TopLayer    0402C           2249.409      2595.512      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C76        50V              TopLayer    0402C           2052.559      2595.512      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C75        50V              TopLayer    0402C           2239.567      2428.189      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C74        50V              BottomLayer 0402C           2121.457      2349.449      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C73        50V              BottomLayer 0402C           2210.039      2221.496      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C72        50V              TopLayer    0402C           2328.150      2044.331      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C71        50V              BottomLayer 0402C           2249.409      2221.496      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C70        50V              BottomLayer 0402C           2023.032      2182.126      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C68        50V              BottomLayer 1206C           2013.189      2318.921      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C67        50V              TopLayer    0402C           2859.646      3422.283      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C61        50V              TopLayer    0402C           1904.921      2251.024      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C60        50V              TopLayer    1206C           989.378       3089.598      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C59        50V              TopLayer    1206C           989.378       3188.024      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C58B       50V              TopLayer    0402C           674.606       3717.559      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C58A       50V              TopLayer    0402C           664.764       2398.661      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C57B       50V              TopLayer    0402C           1511.220      3963.622      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C57A       50V              TopLayer    0402C           1511.220      2634.882      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C56B       50V              TopLayer    0402C           733.661       3884.882      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C56A       50V              TopLayer    0402C           723.819       2575.827      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C55B       50V              TopLayer    0402C           674.606       3806.142      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C55A       50V              TopLayer    0402C           664.764       2497.087      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C54B       50V              TopLayer    0402C           910.827       3747.087      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C54A       50V              TopLayer    0402C           910.827       2438.032      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C53        50V              BottomLayer 0402C           4414.764      2004.961      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C50        50V              BottomLayer 0402C           4325.000      4429.315      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C49        50V              BottomLayer 0402C           4395.079      3815.984      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C48        50V              BottomLayer 0402C           4227.756      3894.724      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C47        50V              BottomLayer 0402C           4395.079      4012.835      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C14D       50V              TopLayer    0402C           3853.740      2319.921      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C14C       50V              TopLayer    0402C           3853.740      2989.213      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C14B       50V              TopLayer    0402C           3853.740      3658.504      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C14A       50V              TopLayer    0402C           3843.898      4327.795      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C13D       50V              TopLayer    0402C           3893.110      2319.921      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C13C       50V              TopLayer    0402C           3893.110      2989.213      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C13B       50V              TopLayer    0402C           3893.110      3658.504      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C13A       50V              TopLayer    0402C           3883.268      4327.795      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C12D       50V              TopLayer    0402C           3883.268      2113.228      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C12B       50V              TopLayer    0402C           3883.268      3441.968      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C12A       50V              TopLayer    0402C           3883.268      4111.260      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C11D       50V              TopLayer    0402C           3971.850      2319.921      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C11C       50V              TopLayer    0402C           3971.850      2989.213      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C11B       50V              TopLayer    0402C           3971.850      3658.504      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C11A       50V              TopLayer    0402C           3962.008      4327.795      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C10D       50V              TopLayer    0402C           3962.008      2113.228      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C10C       50V              TopLayer    0402C           3962.008      2782.520      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C10B       50V              TopLayer    0402C           3962.008      3441.968      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C10A       50V              TopLayer    0402C           3962.008      4111.260      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8D        50V              TopLayer    0402C           4060.433      2113.228      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8C        50V              TopLayer    0402C           4060.433      2782.520      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8B        50V              TopLayer    0402C           4060.433      3441.968      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8A        50V              TopLayer    0402C           4060.433      4111.260      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7D        50V              TopLayer    0402C           4011.220      2319.921      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7C        50V              TopLayer    0402C           4011.220      2989.213      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7B        50V              TopLayer    0402C           4011.220      3658.504      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7A        50V              TopLayer    0402C           4001.378      4327.795      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6D        50V              TopLayer    0402C           4099.803      2113.228      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6C        50V              TopLayer    0402C           4099.803      2782.520      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6B        50V              TopLayer    0402C           4099.803      3441.968      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6A        50V              TopLayer    0402C           4099.803      4111.260      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5D        50V              TopLayer    0402C           3932.480      2319.921      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5C        50V              TopLayer    0402C           3932.480      2989.213      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5B        50V              TopLayer    0402C           3932.480      3658.504      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5A        50V              TopLayer    0402C           3922.638      4327.795      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4D        50V              BottomLayer 0402C           4060.433      1886.850      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4C        50V              BottomLayer 0402C           4060.433      2556.142      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4B        50V              BottomLayer 0402C           4060.433      3215.590      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4A        50V              BottomLayer 0402C           4060.433      3894.724      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3D        50V              BottomLayer 0603C           4001.378      1886.850      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3C        50V              BottomLayer 0603C           4001.378      2556.142      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3B        50V              BottomLayer 0603C           4001.378      3215.591      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3A        50V              BottomLayer 0603C           4001.378      3895.709      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C62        50V              BottomLayer 1206C           1963.976      2525.614      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C63        50V              BottomLayer 1206C           1865.551      2525.614      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C69        50V              BottomLayer 1206C           1914.764      2192.968      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C78        50V              TopLayer    0402C           2790.748      2477.402      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+D10        BAT46ZFILM       BottomLayer SMA             552.559       3378.976      270      "Schottky Rectifier"            
+D11        BAT46ZFILM       BottomLayer SMA             552.559       2961.653      90       "Schottky Rectifier"            
+D18        BAT46ZFILM       BottomLayer SMA             2721.850      4150.630      270      "Schottky Rectifier"            
+D19        BAT46ZFILM       TopLayer    SMA             2672.638      2290.394      90       "Schottky Rectifier"            
+J1         S8211-46R        BottomLayer CR2032_ASSEMBLY 2023.032      4239.213      360      ""                              
+J5         "DATA PORT"      BottomLayer MUSBD111M0      274.803       3796.299      90       ""                              
+J6         "MARK PORT"      BottomLayer MUSBD111M0      270.866       2548.268      90       ""                              
+U1A        ADS1299IPAGR     BottomLayer TQFP-64         3991.535      4219.528      180      ""                              
+U1B        ADS1299IPAGR     BottomLayer TQFP-64         3991.535      3552.704      180      ""                              
+U1C        ADS1299IPAGR     BottomLayer TQFP-64         3991.535      2885.879      180      ""                              
+U1D        ADS1299IPAGR     BottomLayer TQFP-64         3991.535      2219.055      180      ""                              
+U2A        TPD4E1B06DCKR    BottomLayer SC70-6          5179.921      3810.866      270      ""                              
+U2B        TPD4E1B06DCKR    BottomLayer SC70-6          5179.921      3324.252      270      ""                              
+U2C        TPD4E1B06DCKR    BottomLayer SC70-6          5178.740      2860.866      270      ""                              
+U2D        TPD4E1B06DCKR    BottomLayer SC70-6          5178.740      2460.866      270      ""                              
+U3A        TPD4E1B06DCKR    BottomLayer SC70-6          5179.921      3560.866      270      ""                              
+U3B        TPD4E1B06DCKR    BottomLayer SC70-6          5179.921      3074.252      270      ""                              
+U3C        TPD4E1B06DCKR    BottomLayer SC70-6          5178.740      2660.866      270      ""                              
+U3D        TPD4E1B06DCKR    BottomLayer SC70-6          5178.740      2260.866      270      ""                              
+U6         TPD4E1B06DCKR    BottomLayer SC70-6          5680.866      3052.795      180      ""                              
+U7         TPD4E1B06DCKR    BottomLayer SC70-6          5680.866      2881.535      180      ""                              
+U8A        "FT232RL R"      BottomLayer FTDI-28         686.417       2504.961      180      "IC USB TO SERIAL UART 28-SSOP" 
+U8B        "FT232RL R"      BottomLayer FTDI-28         694.291       3819.921      180      "IC USB TO SERIAL UART 28-SSOP" 
+U12        PCF8563T/5,518   TopLayer    SO-8            2844.488      2284.626      90       ""                              
+U13        MKL26Z256VLH4    TopLayer    LQFP-64         2377.362      3166.378      45       ""                              
+U14        TPD4E1B06DCKR    TopLayer    SC70-6          2540.748      4416.378      0        ""                              
+Y1         32.768kHz        TopLayer    ABS10           2779.646      2064.016      180      "Crystal Oscillator"            
+OP1A       ACPL-W61L-560E   BottomLayer SO-6S           1200.984      2428.976      180      ""                              
+OP1B       ACPL-W61L-560E   BottomLayer SO-6S           1203.347      3742.362      180      ""                              
+OP2A       ACPL-W61L-560E   BottomLayer SO-6S           1200.984      2634.095      360      ""                              
+OP2B       ACPL-W61L-560E   BottomLayer SO-6S           1203.347      3960.472      360      ""                              
+RFS1       Component_1      BottomLayer SMS-462F        4169.039      3161.299      90       ""                              
+U10        LM27762DSST      BottomLayer WFDFN-12        2121.455      2211.341      360      ""                              
+D12        +VSYS            TopLayer    0402L-ORANGE    2141.504      1946.987      270      "Typical INFRARED GaAs LED"     
+D13        +3.3V            TopLayer    0402L-ORANGE    2076.504      1946.987      270      "Typical INFRARED GaAs LED"     
+D14        +2.5V            TopLayer    0402L-ORANGE    2011.504      1946.987      270      "Typical INFRARED GaAs LED"     
+D15        -2.5V            TopLayer    0402L-ORANGE    1951.504      1946.987      270      "Typical INFRARED GaAs LED"     
+D16        2.5VREF          TopLayer    0402L-ORANGE    1891.504      1946.987      270      "Typical INFRARED GaAs LED"     
+J9         "MICRO SD"       TopLayer    503398-1892     2092.850      4346.516      0        ""                              
+C15        50V              BottomLayer 0402C           4424.685      3296.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C16        "Cap Pol1"       BottomLayer 2917            1560.772      3370.000      180      "Polarized Capacitor (Radial)"  
+C17        "Cap Pol1"       BottomLayer 2917            837.228       3369.000      360      "Polarized Capacitor (Radial)"  
+C18        50V              BottomLayer 1206C           1578.000      2703.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C19        "Cap Pol1"       BottomLayer 2917            1655.772      2282.000      360      "Polarized Capacitor (Radial)"  
+R11A       "Res 0805"       BottomLayer 0402R           4370.315      4062.000      360      Resistor                        
+R11B       "Res 0805"       BottomLayer 0402R           4360.315      3395.000      360      Resistor                        
+R11C       "Res 0805"       BottomLayer 0402R           4360.315      2723.000      360      Resistor                        
+R11D       "Res 0805"       BottomLayer 0402R           4360.315      2054.000      360      Resistor                        
+R13        "Res 0805"       TopLayer    0402R           2926.685      2861.000      180      Resistor                        
+R14        "Res 0805"       TopLayer    0402R           2533.000      2282.685      90       Resistor                        
+PS1        VHS1-S5-S5-SIP   BottomLayer ISOLATED_MODULE 1251.000      3002.000      360      ""                              
+U4         LD1117S33CTR     BottomLayer SOT-223         1639.000      2519.000      180      ""                              
+C12C       50V              TopLayer    0402C           3883.268      2782.520      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C20A       50V              TopLayer    0603C           4206.457      4490.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C20B       50V              TopLayer    0603C           4215.000      3770.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C20C       50V              TopLayer    0603C           4205.000      3105.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C20D       50V              TopLayer    0603C           4206.457      2470.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C21A       50V              TopLayer    0603C           4206.457      3950.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C21B       50V              TopLayer    0603C           4206.457      3280.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C21C       50V              TopLayer    0603C           4203.543      2620.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C21D       50V              TopLayer    0603C           4205.000      1952.243      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+JP3        "ROM BOOTLOADER" BottomLayer 61300211121     3248.000      1908.000      360      "Header, 2-Pin"                 
+R15        "Res 0805"       TopLayer    0402R           2487.000      3570.315      90       Resistor                        
+R16        "Res 0805"       TopLayer    0402R           3064.315      1906.000      180      Resistor                        

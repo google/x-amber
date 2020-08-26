@@ -1,0 +1,114 @@
+Altium Designer Pick and Place Locations
+G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\Pick Place\651-02489-01_Pick Place.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       15/05/19
+Time:       21:30
+Revision:   Not in VersionControl
+Variant:    PRODUCTION
+Units used: mil
+
+Designator Comment        Layer       Footprint   Center-X(mil) Center-Y(mil) Rotation Description                     
+U3E        LPV821DBVR     TopLayer    SOT-23-5    4943.425      2377.000      90       ""                              
+U3D        LPV821DBVR     TopLayer    SOT-23-5    4942.425      2817.000      90       ""                              
+U3C        LPV821DBVR     TopLayer    SOT-23-5    4940.425      3265.000      90       ""                              
+U3B        LPV821DBVR     TopLayer    SOT-23-5    4941.425      3706.000      90       ""                              
+U3A        LPV821DBVR     TopLayer    SOT-23-5    4944.992      4158.401      90       ""                              
+U2E        LPV821DBVR     TopLayer    SOT-23-5    4939.425      2604.000      90       ""                              
+U2D        LPV821DBVR     TopLayer    SOT-23-5    4938.575      3048.401      90       ""                              
+U2C        LPV821DBVR     TopLayer    SOT-23-5    4944.425      3494.000      90       ""                              
+U2B        LPV821DBVR     TopLayer    SOT-23-5    4940.425      3928.598      90       ""                              
+U2A        LPV821DBVR     TopLayer    SOT-23-5    4945.425      4381.000      90       ""                              
+U1E        REF200AU/2K5   TopLayer    SOIC-8      4381.500      3660.000      0        ""                              
+U1D        REF200AU/2K5   TopLayer    SOIC-8      3996.500      2830.000      0        ""                              
+U1C        REF200AU/2K5   TopLayer    SOIC-8      4001.500      4035.000      0        ""                              
+U1B        REF200AU/2K5   TopLayer    SOIC-8      3391.500      2835.000      0        ""                              
+U1A        REF200AU/2K5   TopLayer    SOIC-8      3391.500      4035.000      0        ""                              
+R6E        "Res 0805"     TopLayer    0805R       3989.000      3033.583      90       Resistor                        
+R6D        "Res 0805"     TopLayer    0805R       3389.000      2435.000      90       Resistor                        
+R6C        "Res 0805"     TopLayer    0805R       3389.000      3636.417      90       Resistor                        
+R6B        "Res 0805"     TopLayer    0805R       2749.000      2428.583      90       Resistor                        
+R6A        "Res 0805"     TopLayer    0805R       2749.000      3633.583      90       Resistor                        
+R5E        "Res 0805"     TopLayer    0805R       4217.583      3425.000      360      Resistor                        
+R5D        "Res 0805"     TopLayer    0805R       3619.000      2825.000      360      Resistor                        
+R5C        "Res 0805"     TopLayer    0805R       3619.000      4025.000      360      Resistor                        
+R5B        "Res 0805"     TopLayer    0805R       3017.583      2830.000      360      Resistor                        
+R5A        "Res 0805"     TopLayer    0805R       3012.583      4030.000      360      Resistor                        
+R4E        "Res 0805"     TopLayer    0805R       5107.000      2341.000      360      Resistor                        
+R4D        "Res 0805"     TopLayer    0805R       5107.000      2781.000      360      Resistor                        
+R4C        "Res 0805"     TopLayer    0805R       5107.000      3231.000      360      Resistor                        
+R4B        "Res 0805"     TopLayer    0805R       5112.000      3671.000      360      Resistor                        
+R4A        "Res 0805"     TopLayer    0805R       5117.000      4121.000      360      Resistor                        
+R3E        "Res 0805"     TopLayer    0805R       3984.000      4235.000      90       Resistor                        
+R3D        "Res 0805"     TopLayer    0805R       3389.000      3035.000      90       Resistor                        
+R3C        "Res 0805"     TopLayer    0805R       3389.000      4236.417      90       Resistor                        
+R3B        "Res 0805"     TopLayer    0805R       2749.000      3033.583      90       Resistor                        
+R3A        "Res 0805"     TopLayer    0805R       2749.000      4235.000      90       Resistor                        
+R2E        "Res 0805"     TopLayer    0805R       4215.417      4620.000      360      Resistor                        
+R2D        "Res 0805"     TopLayer    0805R       3619.000      3425.000      360      Resistor                        
+R2C        "Res 0805"     TopLayer    0805R       3622.583      4630.000      360      Resistor                        
+R2B        "Res 0805"     TopLayer    0805R       3017.583      3425.000      360      Resistor                        
+R2A        "Res 0805"     TopLayer    0805R       3017.583      4630.000      360      Resistor                        
+R1E        "Res 0805"     TopLayer    0805R       5107.000      2566.000      0        Resistor                        
+R1D        "Res 0805"     TopLayer    0805R       5105.583      3011.000      0        Resistor                        
+R1C        "Res 0805"     TopLayer    0805R       5112.000      3461.000      0        Resistor                        
+R1B        "Res 0805"     TopLayer    0805R       5117.000      3896.000      0        Resistor                        
+R1A        "Res 0805"     TopLayer    0805R       5115.583      4356.000      0        Resistor                        
+J12        BIAS/GND       TopLayer    38255       4289.000      2530.000      0        ""                              
+D2E        "CMPD6001S TR" TopLayer    SOT-23      3989.000      3240.000      180      ""                              
+D2D        "CMPD6001S TR" TopLayer    SOT-23      3389.000      2640.000      180      ""                              
+D2C        "CMPD6001S TR" TopLayer    SOT-23      3389.000      3840.000      180      ""                              
+D2B        "CMPD6001S TR" TopLayer    SOT-23      2744.000      2640.000      180      ""                              
+D2A        "CMPD6001S TR" TopLayer    SOT-23      2749.000      3840.000      180      ""                              
+D1E        "CMPD6001S TR" TopLayer    SOT-23      3989.000      4440.000      180      ""                              
+D1D        "CMPD6001S TR" TopLayer    SOT-23      3389.000      3240.000      180      ""                              
+D1C        "CMPD6001S TR" TopLayer    SOT-23      3389.000      4439.212      180      ""                              
+D1B        "CMPD6001S TR" TopLayer    SOT-23      2744.000      3240.000      180      ""                              
+D1A        "CMPD6001S TR" TopLayer    SOT-23      2744.000      4440.000      180      ""                              
+C8E        ""             TopLayer    0805C       5107.000      2421.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8D        ""             TopLayer    0805C       5105.583      2861.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8C        ""             TopLayer    0805C       5107.000      3311.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8B        ""             TopLayer    0805C       5112.000      3751.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C8A        ""             TopLayer    0805C       5117.000      4201.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7E        ""             TopLayer    0805C       4787.000      2381.000      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7D        ""             TopLayer    0805C       4827.000      2931.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7C        ""             TopLayer    0805C       4832.000      3376.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7B        ""             TopLayer    0805C       4832.000      3821.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C7A        ""             TopLayer    0805C       4837.000      4271.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6E        50V            TopLayer    0805C       4359.000      3425.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6D        50V            TopLayer    0805C       3759.000      2825.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6C        50V            TopLayer    0805C       3759.000      4025.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6B        50V            TopLayer    0805C       3159.000      2830.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C6A        50V            TopLayer    0805C       3154.000      4030.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5E        ""             TopLayer    0805C       4822.000      2491.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5D        ""             TopLayer    0805C       4797.000      2819.583      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5C        ""             TopLayer    0805C       4802.000      3264.583      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5B        ""             TopLayer    0805C       4802.000      3712.417      90       "CAP .1UF 50V CERAMIC Y5V 0805" 
+C5A        ""             TopLayer    0805C       4808.417      4156.000      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4E        ""             TopLayer    0805C       5107.000      2646.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4D        ""             TopLayer    0805C       5107.000      3091.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4C        ""             TopLayer    0805C       5112.000      3541.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4B        ""             TopLayer    0805C       5115.583      3976.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C4A        ""             TopLayer    0805C       5117.000      4436.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3E        ""             TopLayer    0805C       4827.000      2711.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3D        ""             TopLayer    0805C       4828.417      3156.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3C        ""             TopLayer    0805C       4832.000      3601.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3B        ""             TopLayer    0805C       4837.000      4046.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C3A        ""             TopLayer    0805C       4840.583      4496.000      360      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2E        50V            TopLayer    0805C       4362.583      4625.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2D        50V            TopLayer    0805C       3760.417      3425.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2C        50V            TopLayer    0805C       3762.583      4630.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2B        50V            TopLayer    0805C       3159.000      3425.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C2A        50V            TopLayer    0805C       3162.583      4630.000      180      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1E        ""             TopLayer    0805C       4792.000      2601.000      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1D        ""             TopLayer    0805C       4802.000      3044.583      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1C        ""             TopLayer    0805C       4802.000      3489.583      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1B        ""             TopLayer    0805C       4807.000      3934.583      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+C1A        ""             TopLayer    0805C       4812.000      4381.000      270      "CAP .1UF 50V CERAMIC Y5V 0805" 
+J11        REF            TopLayer    38255       4289.000      3130.000      0        ""                              
+J4         "CH 3"         TopLayer    38255       3089.000      3130.000      0        ""                              
+J3         "CH 2"         TopLayer    38255       3089.000      3730.000      0        ""                              
+J1         "CH 1"         TopLayer    38255       3089.000      4330.000      0        ""                              
+J2         10268-6212PC   BottomLayer 2-5174339-5 5566.500      3416.000      90       ""                              

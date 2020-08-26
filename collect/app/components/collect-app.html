@@ -1,0 +1,739 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/app-layout/app-layout.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+
+<link rel="import" href="channels-settings.html">
+<link rel="import" href="channels-view.html">
+
+<dom-module id="collect-app">
+
+  <template>
+
+    <style>
+      :host {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-family: 'Roboto', sans-serif;
+        @apply --layout-vertical;
+      }
+      app-toolbar {
+        color: var(--secondary-text-color);
+        @apply --paper-font-body1;
+      }
+      app-toolbar.main-toolbar {
+        overflow: visible;
+      }
+      .collect-icon {
+        padding: 16px;
+      }
+      .artifact-wrapper-div {
+        border-radius: 20px;
+        background-color: #ffc400;
+      }
+      .artifact-ok-wrapper-div {
+        border-radius: 20px;
+        background-color: #08c136bd;
+      }
+      .artifact-inner-div {
+        padding: 5px 12px 5px 12px;
+      }
+      .artifact-icon {
+        color: white;
+      }
+      .artifact-text {
+        font-weight: 800;
+        font-size: 16px;
+        color: white;
+      }
+      paper-icon-button {
+        margin: 8px 0px;
+      }
+      app-toolbar paper-dropdown-menu {
+        padding: 0 8px;
+      }
+      app-toolbar paper-toggle-button {
+        margin-left: 12px;
+      }
+      .preset-dropdown {
+        width: 120px;
+      }
+      .site-dropdown {
+        width: 120px;
+      }
+      .task-dropdown {
+        width: 165px;
+      }
+      .session-input {
+        width: 4em;
+        padding: 0 8px;
+      }
+      .record-time {
+         color: var(--google-red-500);
+         @apply --paper-font-body2;
+      }
+      .record-button {
+        background-color: var(--google-red-500);
+        color: #ffffff;
+        margin-left: 8px;
+      }
+      #settingsDrawer {
+        /*--app-drawer-width: 500px;*/
+      }
+      .settings-container {
+        height: 100%;
+        overflow: auto;
+      }
+      .settings-content {
+        padding: 16px;
+        text-align: left;
+        @apply --layout-start;
+        @apply --paper-font-body1;
+      }
+      .settings-content paper-slider {
+        width: 254px;
+        margin-left: -15px;
+      }
+      .settings-title {
+        @apply --paper-font-title;
+      }
+      .settings-subhead {
+        margin: 8px 0;
+        @apply --paper-font-subhead;
+      }
+      .settings-filter-setting {
+        @apply --layout-horizontal;
+        @apply --layout-center;
+        padding: 8px 0;
+      }
+      .settings-button {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        width: 100%;
+      }
+      .flex {
+        @apply --layout-flex;
+      }
+      paper-dialog {
+        max-width: 50%;
+      }
+      .error-dialog > h2 {
+        color: var(--google-red-500);
+      }
+    </style>
+
+    <app-drawer-layout fullbleed force-narrow>
+
+      <app-drawer slot="drawer" id="settingsDrawer" align="right">
+        <div class="settings-container">
+          <div class="settings-content">
+            <div class="settings-title">Settings</div>
+            <div class="settings-subhead">Software Version</div>
+            <div>[[version]]</div>
+            <div class="settings-subhead">Firmware Version</div>
+            <div>[[fwVersion]]</div>
+            <div class="settings-subhead">Hardware Version</div>
+            <div>[[hwVersion]]</div>
+            <div class="settings-subhead">Filter</div>
+            <div class="settings-filter-setting">
+              <span class="flex">Enable Low Pass</span>
+              <paper-toggle-button checked="{{filterLowPassEnabled}}" disabled="[[isFiltering]]"></paper-toggle-button>
+            </div>
+            <div class="settings-filter-setting">
+              <paper-input class="flex" label="Low Pass Order" type="number" min="1" max="12" value="{{filterLowPassOrder}}" disabled="[[isFiltering]]"></paper-input>
+              <span>&nbsp;</span>
+              <paper-input class="flex" label="Low Pass Hz" type="number" value="{{filterLowPassHz}}" disabled="[[isFiltering]]"></paper-input>
+            </div>
+            <div class="settings-filter-setting">
+              <span class="flex">Enable High Pass</span>
+              <paper-toggle-button checked="{{filterHighPassEnabled}}" disabled="[[isFiltering]]"></paper-toggle-button>
+            </div>
+            <div class="settings-filter-setting">
+              <paper-input class="flex" label="High Pass Order" type="number" min="1" max="12" value="{{filterHighPassOrder}}" disabled="[[isFiltering]]"></paper-input>
+              <span>&nbsp;</span>
+              <paper-input class="flex" label="High Pass Hz" type="number" value="{{filterHighPassHz}}" disabled="[[isFiltering]]"></paper-input>
+            </div>
+            <div class="settings-subhead">Channels</div>
+            <channels-settings preset="[[selectedPreset]]" on-save-preset="savePresetHandler"></channels-settings>
+            <div class="settings-subhead">Advanced</div>
+            <paper-button class="settings-button" on-click="testCommandHandler">Send Test Command</paper-button>
+          </div>
+        </div>
+      </app-drawer>
+
+      <app-header-layout fullbleed>
+
+        <app-header slot="header">
+          <app-toolbar class="main-toolbar">
+            <iron-icon class="collect-icon" src="images/logo.svg"></iron-icon>
+            <paper-dropdown-menu class="preset-dropdown" label="Preset" always-float-label noink no-animations>
+              <paper-listbox slot="dropdown-content" class="dropdown-content" selected="{{selectedPresetIndex}}">
+                <template is="dom-repeat" items="{{presetStrings}}">
+                  <paper-item>[[item]]</paper-item>
+                </template>
+              </paper-listbox>
+            </paper-dropdown-menu>
+            <paper-dropdown-menu class="site-dropdown" label="Site" always-float-label noink no-animations>
+              <paper-listbox slot="dropdown-content" class="dropdown-content" selected="{{selectedSite}}">
+                <template is="dom-repeat" items="{{sites}}">
+                  <paper-item>[[item]]</paper-item>
+                </template>
+              </paper-listbox>
+            </paper-dropdown-menu>
+            <paper-dropdown-menu class="task-dropdown" label="Task" always-float-label noink no-animations>
+              <paper-listbox slot="dropdown-content" class="dropdown-content" selected="{{selectedTask}}">
+                <template is="dom-repeat" items="{{tasks}}">
+                  <paper-item>[[item]]</paper-item>
+                </template>
+              </paper-listbox>
+            </paper-dropdown-menu>
+            <paper-input label="Participant ID" type="number" min="0" value="{{participantId}}" placeholder="Enter participant ID" always-float-label></paper-input>
+            <paper-input class="session-input" label="Session" type="number" min="1" max="999" value="{{session}}" on-input="sessionInputHandler" on-change="sessionChangeHandler" always-float-label></paper-input>
+            <paper-dropdown-menu class="port-dropdown" label="Port" placeholder="Choose a port" always-float-label noink no-animations on-iron-select="onPortSelected">
+              <paper-listbox slot="dropdown-content" class="dropdown-content" selected="{{selectedPortIndex}}">
+                <template is="dom-repeat" items="{{ports}}">
+                  <paper-item>[[item]]</paper-item>
+                </template>
+              </paper-listbox>
+            </paper-dropdown-menu>
+            <div class="flex"></div>
+            <span class="record-time" hidden="[[!isRecording]]">[[recordingTimeString]]</span>
+            <paper-button class="record-button" on-click="recordHandler">
+              <template is="dom-if" if="{{!isRecording}}">
+                Record
+              </template>
+              <template is="dom-if" if="{{isRecording}}">
+                Stop
+              </template>
+            </paper-button>
+            <paper-icon-button icon="settings" on-click="toggleSettings"></paper-icon-button>
+          </app-toolbar>
+        </app-header>
+
+        <channels-view id="channels" artifact="[[artifact]]" class="flex" preset="[[selectedPreset]]" dataer="[[dataer]]" is-recording="[[isRecording]]" on-filter-change="filterChangeHandler"></channels-view>
+
+      </app-header-layout>
+
+    </app-drawer-layout>
+
+    <paper-dialog id="dialog" modal>
+      <div>{{dialogMessage}}</div>
+      <div class="buttons">
+        <paper-button dialog-confirm>OK</paper-button>
+      </div>
+    </paper-dialog>
+
+    <paper-dialog id="errorDialog" class="error-dialog" modal>
+      <h2>Error</h2>
+      <div>{{errorDialogMessage}}</div>
+      <div class="buttons">
+        <paper-button dialog-confirm>OK</paper-button>
+      </div>
+    </paper-dialog>
+
+  </template>
+
+  <script src="../../third_party/dsp.js/dsp.js"></script>
+  <script src="../../third_party/fili.js/fili.min.js"></script>
+  <script src="../modules/core/config.js"></script>
+  <script src="../modules/core/dataer.js"></script>
+  <script src="../modules/core/socketer.js"></script>
+
+  <script>
+    'use strict';
+
+    const { dialog } = require('electron').remote;
+
+    class CollectApp extends Polymer.Element {
+      static get is() {
+        return 'collect-app';
+      }
+      static get properties() {
+        return {
+          dataer: {
+            type: Object,
+          },
+          presetStrings: {
+            type: Array,
+          },
+          selectedPresetIndex: {
+            type: Number,
+            observer: 'selectedPresetIndexChanged',
+          },
+          sites: {
+            type: Array,
+            value() {
+              return [
+                'FSU',
+                'MSU',
+                'SDSU',
+                'UF',
+                'UU',
+                'M20',
+              ];
+            },
+          },
+          selectedSite: {
+            type: Number,
+            observer: 'selectedSiteChanged',
+            value() {
+              return 0;
+            }
+          },
+          tasks: {
+            type: Array,
+            value() {
+              return [
+                'Doors',
+                'Emotional Images',
+                'Eyes Closed',
+                'Flankers',
+                'Hot Button',
+                'SRET',
+                'SSVEP',
+                'Working Memory',
+                'Oddball',
+                'Test',
+              ];
+            },
+          },
+          selectedTask: {
+            type: Number,
+            observer: 'selectedTaskChanged',
+            value() {
+              return 0;
+            }
+          },
+          participantId: {
+            type: String,
+            value() {
+              return '';
+            }
+          },
+          session: {
+            type: String,
+            value() {
+              return '1';
+            }
+          },
+          ports: {
+            type: Array,
+          },
+          selectedPortIndex: {
+            type: Number,
+          },
+          isRecording: {
+            type: Boolean,
+            value() {
+              return false;
+            }
+          },
+          recordingTimeString: {
+            type: String,
+            value() {
+              return '';
+            }
+          },
+          isFiltering: {
+            type: Boolean,
+            value() {
+              return false;
+            }
+          },
+          filterLowPassEnabled: {
+            type: Boolean,
+            observer: 'filterLowPassEnabledChanged',
+          },
+          filterHighPassEnabled: {
+            type: Boolean,
+            observer: 'filterHighPassEnabledChanged',
+          },
+          filterLowPassOrder: {
+            type: Number,
+            observer: 'filterLowPassOrderChanged',
+          },
+          filterHighPassOrder: {
+            type: Number,
+            observer: 'filterHighPassOrderChanged',
+          },
+          filterLowPassHz: {
+            type: Number,
+            observer: 'filterLowPassChanged',
+          },
+          filterHighPassHz: {
+            type: Number,
+            observer: 'filterHighPassChanged',
+          },
+          artifact: {
+            type: Object,
+            value() {
+              return {
+                isArtifact: false,
+                show: true
+              }
+            }
+          },
+          version: {
+            type: String,
+          },
+          hwVersion: {
+            type: String,
+            value() {
+              return 'N/A';
+            }
+          },
+          fwVersion: {
+            type: String,
+            value() {
+              return 'N/A';
+            }
+          },
+          dialogMessage: {
+            type: String,
+            value() {
+              return '';
+            }
+          }
+        };
+      }
+      constructor() {
+        super();
+        this.top = this;
+
+        // load persistent settings
+        // wait to load selected preset and port until the server returns a list
+        // of values
+        this.config = new Config();
+        let site = this.config.get(Config.KEYS.SITE);
+        if (site) {
+          let index = this.sites.indexOf(site);
+          if (index != -1) {
+            this.selectedSite = index;
+          }
+        }
+        let task = this.config.get(Config.KEYS.TASK);
+        if (task) {
+          let index = this.tasks.indexOf(task);
+          if (index != -1) {
+            this.selectedTask = index;
+          }
+        }
+
+        this.filterLowPassEnabled = this.config.get(Config.KEYS.FILTER_ENABLED_LOWPASS, true);
+        this.filterHighPassEnabled = this.config.get(Config.KEYS.FILTER_ENABLED_HIGHPASS, true);
+        this.filterLowPassOrder = this.config.get(Config.KEYS.FILTER_ORDER_LOWPASS, 8);
+        this.filterHighPassOrder = this.config.get(Config.KEYS.FILTER_ORDER_HIGHPASS, 2);
+        this.filterLowPassHz = this.config.get(Config.KEYS.FILTER_LOWPASS, 40);
+        this.filterHighPassHz = this.config.get(Config.KEYS.FILTER_HIGHPASS, 0.1);
+
+        this.dataer = new Dataer(this);
+        this.socketer = new Socketer(this);
+      }
+      toggleSettings() {
+        this.$.settingsDrawer.toggle();
+      }
+      choosePreset(preset) {
+        if (!this.presets) {
+          return;
+        }
+        for (let i = 0; i < this.presets.length; i++) {
+          if (this.presets[i]['name'] == preset) {
+            this.selectedPresetIndex = i;
+            break;
+          }
+        }
+      }
+      updateRecordingTimeString() {
+        if (!this.isRecording) {
+          clearInterval(this.recordingId);
+          return;
+        }
+        var diff = (new Date()) - this.recordingStartTime;
+        let d = new Date(null);
+        d.setSeconds(diff / 1000);
+        this.recordingTimeString = d.toISOString().substring(11, 19);
+      }
+      selectRecordingDir() {
+        // un-focus the button so enter/space don't stop the recording
+        document.activeElement.blur();
+        dialog.showOpenDialog(
+          require('electron').remote.getCurrentWindow(), {
+          title: 'Save recording to directory',
+          defaultPath: this.config.get(Config.KEYS.RECORDING_DIR),
+          properties: ['openDirectory', 'createDirectory'],
+        }, function(dir) {
+          if (!dir || (dir.length == 0)) {
+            this.showError('Please select a recording directory!');
+            return;
+          }
+          this.config.set(Config.KEYS.RECORDING_DIR, dir[0]);
+          this.startRecording(dir[0]);
+        }.bind(this));
+      }
+      startRecording(dir) {
+        // tell the server to start the recording.
+        let recordingSettings = {
+          'site': this.sites[this.selectedSite],
+          'task': this.tasks[this.selectedTask],
+          'participantId': this.participantId,
+          'session': this.session,
+          'presetName': this.selectedPreset['name'],
+          'directory': dir,
+        };
+        if (!recordingSettings['site']) {
+          this.showError('Please select a site!');
+        } else if (!recordingSettings['task']) {
+          this.showError('Please select a task!');
+        } else if (!recordingSettings['participantId']) {
+          this.showError('Please enter a participant ID!');
+        } else {
+          this.isRecording = true;
+          this.socketer.sendStartRecordingMessageToServer(recordingSettings);
+        }
+      }
+      stopRecording(success) {
+        this.isRecording = false;
+        this.recordingTimeString = '';
+        clearInterval(this.recordingId);
+        this.socketer.sendStopRecordingMessageToServer();
+        if (success) {
+          this.dialogMessage = 'Recording written to ' + this.recordingFilePath;
+          this.$.dialog.open();
+        }
+      }
+      showError(message) {
+        this.errorDialogMessage = message;
+        this.$.errorDialog.open();
+      }
+      updateArtifact(artifact) {
+        if (artifact.isArtifact) {
+          this.set('artifact.channelsAffected', [0,1,2]);
+          this.set('artifact.text', 'Artifact present');
+        }
+        this.set('artifact.isArtifact', artifact.isArtifact);
+      }
+      sessionInputHandler(e) {
+        let val = e.target.value;
+        if (val == '0') {
+          e.target.value = '1';
+        } else if (val.length > 3) {
+          e.target.value = val.substring(0, val.length - 1);
+        }
+      }
+      sessionChangeHandler(e) {
+        if (!e.target.value) {
+          e.target.value = '1';
+        }
+      }
+      recordHandler(e) {
+        if (!this.isRecording) {
+          this.selectRecordingDir();
+        } else {
+          this.stopRecording(true);
+        }
+      }
+      savePresetHandler(e) {
+        // save the selected preset here. it'll be applied when the server
+        // returns the new list of presets
+        this.config.set(Config.KEYS.PRESET, e.detail['name']);
+        this.socketer.sendSavePresetMessageToServer(e.detail);
+        this.socketer.sendSendPresetsMessageToServer();
+        this.$.settingsDrawer.close();
+      }
+      testCommandHandler() {
+        this.socketer.sendTestCommandMessageToServer();
+      }
+      filterChangeHandler(e) {
+        this.isFiltering = e.detail;
+        this.dataer.lowPassEnabled = this.filterLowPassEnabled;
+        this.dataer.highPassEnabled = this.filterHighPassEnabled;
+        this.dataer.lowPassOrder = this.filterLowPassOrder;
+        this.dataer.highPassOrder = this.filterHighPassOrder;
+        this.dataer.lowPass = this.filterLowPassHz;
+        this.dataer.highPass = this.filterHighPassHz;
+        this.dataer.toggleFilter(this.isFiltering);
+      }
+      selectedPresetIndexChanged() {
+        if (this.selectedPresetIndex == -1) {
+          return;
+        }
+        this.selectedPreset = this.presets[this.selectedPresetIndex];
+        if (this.selectedPreset) {
+          this.config.set(Config.KEYS.PRESET, this.selectedPreset['name']);
+          for (let i = 0; i < this.selectedPreset.channelData.length; i++) {
+            this.socketer.sendTurnChannelOnOrOffMessageToServer(i, this.selectedPreset.channelData[i]['isOn']);
+            this.socketer.sendSetChannelGainMessageToServer(i, this.selectedPreset.channelData[i]['gain']);
+          }
+        }
+      }
+      selectedSiteChanged() {
+        if (this.selectedSite == -1) {
+          return;
+        }
+        this.config.set(Config.KEYS.SITE, this.sites[this.selectedSite]);
+        switch (this.sites[this.selectedSite]) {
+          case 'UF':
+            this.choosePreset('M20 (4 Ch)');
+            break;
+          case 'FSU':
+          case 'MSU':
+          case 'SDSU':
+          case 'UU':
+            this.choosePreset('M20 (3 Ch)');
+            break;
+        }
+      }
+      selectedTaskChanged() {
+        if (this.selectedTask == -1) {
+          return;
+        }
+        this.config.set(Config.KEYS.TASK, this.tasks[this.selectedTask]);
+      }
+      filterLowPassEnabledChanged() {
+        this.config.set(Config.KEYS.FILTER_ENABLED_LOWPASS, this.filterLowPassEnabled);
+      }
+      filterHighPassEnabledChanged() {
+        this.config.set(Config.KEYS.FILTER_ENABLED_HIGHPASS, this.filterHighPassEnabled);
+      }
+      filterLowPassOrderChanged() {
+        this.config.set(Config.KEYS.FILTER_ORDER_LOWPASS, this.filterLowPassOrder);
+      }
+      filterHighPassOrderChanged() {
+        this.config.set(Config.KEYS.FILTER_ORDER_HIGHPASS, this.filterHighPassOrder);
+      }
+      filterLowPassChanged() {
+        this.config.set(Config.KEYS.FILTER_LOWPASS, this.filterLowPassHz);
+      }
+      filterHighPassChanged() {
+        this.config.set(Config.KEYS.FILTER_HIGHPASS, this.filterHighPassHz);
+      }
+      onPortSelected(e) {
+        let port = e.detail.item.textContent;
+        this.config.set(Config.KEYS.PORT_NAME, port);
+        this.socketer.sendConnectToBoxMessageToServer(port);
+        if (this.selectedPreset) {
+          for (let i = 0; i < this.selectedPreset.channelData.length; i++) {
+            this.socketer.sendTurnChannelOnOrOffMessageToServer(i, this.selectedPreset.channelData[i]['isOn']);
+            this.socketer.sendSetChannelGainMessageToServer(i, this.selectedPreset.channelData[i]['gain']);
+          }
+        }
+        this.$.channels.start();
+      }
+      onConnectionWithServer() {
+        this.socketer.sendSendVersionMessageToServer();
+        this.socketer.sendSendSerialPortsMessageToServer();
+        this.socketer.sendSendPresetsMessageToServer();
+      }
+      onRecordingErrorMessage(message) {
+        this.stopRecording(false);
+        this.showError(message);
+      }
+      onBioampVersionMessage(message) {
+        this.fwVersion = message['fwVersion'];
+        this.hwVersion = message['hwVersion'];
+      }
+      // modules/core/top.js
+      getConfig() {
+        return {
+          NUM_DATA_CHANNELS: 32,
+          DEFAULT_CHANNEL_LABELS: [
+            'A', 'B', 'C', 'D',  'E',  'F',  'G',  'H',  'I',  'J',  'K',
+            'L', 'M', 'N', 'O',  'P',  'Q',  'R',  'S',  'T',  'U',  'V',
+            'X', 'Y', 'Z', 'AA', 'BB', 'CC', 'DD', 'EE', 'FF', 'GG',
+          ]
+        };
+      }
+      getDataer() {
+        return this.dataer;
+      }
+      getDisplayer() {
+        return this;
+      }
+      getPorter() {
+        return this;
+      }
+      getPresetter() {
+        return this;
+      }
+      // modules/core/displayer.js
+      getUpperControls() {
+        return this;
+      }
+      getLowerControls() {
+        return this;
+      }
+      // modules/core/porter.js
+      onSerialPortsMessageReceived(ports) {
+        this.ports = ports;
+        let selected = this.config.get(Config.KEYS.PORT_NAME);
+        if (selected) {
+          this.selectedPortIndex = this.ports.indexOf(selected);
+        }
+      }
+      // modules/core/presetter.js
+      onPresetsMessageReceived(presets) {
+        this.presets = presets;
+        this.presetStrings = presets.reduce((acc, cur) => {
+          acc.push(cur['name']);
+          return acc;
+        }, []);
+        let selectedPreset = this.config.get(Config.KEYS.PRESET);
+        this.choosePreset(selectedPreset);
+      }
+      // modules/core/upperControls.js
+      onChannelDataSocketConnectedMessageReceived() {
+        // nop
+      }
+      onChannelDataSocketClosedMessageReceived() {
+        // nop
+      }
+      onRecordingAlreadyExistsMessageReceived(recordingName) {
+        this.stopRecording(false);
+        this.showError('Recording for this site, task, participant id and session already exists! Double check the values or delete the file ' + recordingName);
+      }
+      onRecordingStartedMessageReceived(recordingFilePath) {
+        // display the timer
+        this.recordingStartTime = new Date();
+        this.updateRecordingTimeString();
+        this.recordingId = setInterval(this.updateRecordingTimeString.bind(this), 1000);
+        this.recordingFilePath = recordingFilePath;
+      }
+      onRecordingStoppedMessageReceived() {
+        // nop
+      }
+      onPresetSavedMessageReceived() {
+        // nop
+      }
+      // modules/core/lowerControls.js
+      onVersionMessageReceived(version) {
+        this.version = version;
+      }
+    }
+
+    customElements.define(CollectApp.is, CollectApp);
+  </script>
+
+</dom-module>

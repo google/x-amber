@@ -1,0 +1,10 @@
+Output: Copy of Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of PCB Document [2 wire active electrode.PcbDoc]
+   Generated File[651-02728-01_Pick Place.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 10:12:10 PM On 12/12/2019

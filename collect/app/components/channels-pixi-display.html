@@ -1,0 +1,366 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-resizable-behavior/iron-resizable-behavior.html">
+
+
+<!--
+
+`channels-pixi-display` implements the waveform view for up to 32 channels.
+
+-->
+
+<dom-module id="channels-pixi-display">
+
+  <script src="../../third_party/pixi.js/pixi.min.js"></script>
+  <script src="../modules/core/channelRenderer.js"></script>
+  <script>
+    'use strict';
+
+    class ChannelsPixiDisplay extends Polymer.MutableData(Polymer.mixinBehaviors(Polymer.IronResizableBehavior, Polymer.Element)) {
+      static get is() {
+        return 'channels-pixi-display';
+      }
+      static get properties() {
+        return {
+          dataer: {
+            type: Object,
+          },
+          channels: {
+            type: Array,
+            observer: 'channelsChanged',
+            value() {
+              return [];
+            }
+          },
+          viewOptions: {
+            type: Object,
+            observer: 'viewOptionsChanged',
+          },
+          isRecording: {
+            type: Boolean,
+            observer: 'isRecordingChanged',
+          },
+          artifact: {
+            type: Object,
+          }
+        };
+      }
+      static get observers() {
+        return [
+          'artifactChanged(artifact.*)'
+        ]
+      }
+      constructor() {
+        super();
+        this.MAX_CHANNEL_COUNT = 32;
+        // cached measurements
+        this.dims = {}; // container dimensions
+        this.xLabelDims = []; // x-axis label dimensions
+        this.channelDims = {}; // channel dimensions
+        // theme
+        // background
+        this.bgColors = [0xf9fafb, 0xeef2f4];
+        this.bgLineColor = 0xd3d3d3;
+        this.watermarkTextStyle = new PIXI.TextStyle({
+          fontFamily: 'Roboto, Arial, sans-serif',
+          fontSize: 100,
+          fill: '#adadad',
+          align: 'center'
+        })
+        this.labelTextStyle = new PIXI.TextStyle({
+          fontFamily: 'Roboto, Arial, sans-serif',
+          fontSize: 14,
+          fill: '#adadad',
+        });
+        // cursor
+        this.cursorLineColor = 0x00b190;
+      }
+      ready() {
+        super.ready();
+
+        // We're using our own rAF loop
+        PIXI.ticker.shared.autoStart = false;
+        PIXI.ticker.shared.stop();
+
+        PIXI.settings.RESOLUTION = window.devicePixelRatio;
+
+        // the main container used for drawing
+        this.pixiStage = new PIXI.Container();
+
+        // this graphics object contains items that are only rendered when the view is resized, scaled, or when the preset changes
+        this.pixiBackground = new PIXI.Graphics();
+        this.pixiStage.addChild(this.pixiBackground);
+
+        // text object for the 'not recording' watermark
+        this.pixiNotRecordingWatermark = new PIXI.Text('Not Recording', this.watermarkTextStyle);
+        this.pixiNotRecordingWatermark.alpha = 0.5;
+        this.pixiBackground.addChild(this.pixiNotRecordingWatermark);
+
+        // text objects for the x axis labels
+        this.pixiXTickLabels = [];
+        this.pixiXLabel = new PIXI.Text(this.viewOptions.xLabel, this.labelTextStyle);
+        this.pixiBackground.addChild(this.pixiXLabel);
+
+        // text objects for the y axis labels
+        this.pixiYLabel = new PIXI.Text(this.viewOptions.yLabel, this.labelTextStyle);
+        this.pixiBackground.addChild(this.pixiYLabel);
+
+        // create renderers for each channel and channel labels
+        this.channelRenderers = [];
+        this.pixiChannelLabels = [];
+        for (let i = 0; i < this.MAX_CHANNEL_COUNT; i++) {
+          this.channelRenderers[i] = new ChannelRenderer(this.dataer, i, this.pixiStage);
+          this.pixiChannelLabels[i] = new PIXI.Text('', this.labelTextStyle);
+          this.pixiBackground.addChild(this.pixiChannelLabels[i]);
+        }
+
+        // cursor
+        this.pixiCursor = new PIXI.Graphics();
+        this.pixiStage.addChild(this.pixiCursor);
+
+        this.measure();
+
+        // create the main renderer
+        this.renderer = PIXI.autoDetectRenderer(this.dims.width, this.dims.height, {antialias: true, transparent: false});
+        this.appendChild(this.renderer.view);
+        this.renderer.view.style.width = this.dims.width + 'px';
+        this.renderer.view.style.height = this.dims.height + 'px';
+
+        this.pixiStage.interactive = true;
+        this.pixiStage.on('mousemove', this.mousemoveHandler.bind(this));
+
+        this.addEventListener('iron-resize', this.resizeHandler.bind(this));
+
+        this.running = false;
+        this.layout();
+      }
+      measure() {
+        // cache the element's dimensions
+        this.dims = {
+          width: this.offsetWidth,
+          height: this.offsetHeight,
+          marginLeft: 16 + 16,
+          marginRight: 16,
+          marginBottom: 14 * 2 + 2,
+        };
+        // calculate the size for each channel view and update channel renderers
+        let channelHeight = (this.dims.height - this.dims.marginBottom) / this.channels.length;
+        this.channelDims = [];
+        for (let i = 0; i < this.channels.length; i++) {
+          this.channelDims[i] = {
+            left: this.dims.marginLeft,
+            top: i * channelHeight,
+            width: this.dims.width - this.dims.marginLeft - this.dims.marginRight,
+            height: channelHeight
+          };
+          this.channelRenderers[i].updateDimensions(this.channelDims[i], this.dims);
+        }
+      }
+      layout() {
+        this.renderBackground(this.pixiBackground);
+        // Render everything
+        this.renderer.render(this.pixiStage);
+      }
+      renderBackground(g) {
+        g.clear();
+
+        // white background
+        g.lineStyle(0);
+        g.beginFill(0xffffff);
+        g.drawRect(0, 0, this.dims.width, this.dims.height);
+
+        let i = 0;
+        let bgColors = this.bgColors;
+        let lineColor = this.bgLineColor;
+
+        // Draw channel backgrounds and y axis ticks and labels
+        // we don't draw the first or last tick for the y axis
+        let yTickCount = this.viewOptions.yTickWidth > 0 ?
+          (this.viewOptions.yMax - this.viewOptions.yMin) / this.viewOptions.yTickWidth - 1 : 0;
+        for (i = 0; i < this.channels.length; i++) {
+          let dims = this.channelDims[i];
+
+          // Background fill
+          g.lineStyle(0);
+          g.beginFill(bgColors[i%2]);
+          g.drawRect(dims.left, dims.top, dims.width, dims.height);
+
+          // y axis ticks
+          for (let j = 0; j < yTickCount; j++) {
+            g.lineStyle(1, lineColor);
+            let yTickHeight = dims.height / (yTickCount + 1);
+            g.moveTo(dims.left, dims.top + (j + 1) * yTickHeight);
+            g.lineTo(dims.left + dims.width, dims.top + (j + 1) * yTickHeight);
+          }
+
+          // Channel label
+          this.pixiChannelLabels[i].text = this.channels[i].label;
+          this.pixiChannelLabels[i].x = dims.left + 2;
+          this.pixiChannelLabels[i].y = dims.top + 2;
+          this.pixiChannelLabels[i].visible = true;
+
+          if (this.channels[i].color) {
+            this.channelRenderers[i].setColor(this.channels[i].color);
+          } else {
+            this.channelRenderers[i].setColor('');
+          }
+          this.channelRenderers[i].setIndex(this.channels[i].index);
+          this.channelRenderers[i].setActive(true);
+        }
+
+        // Hide unused channel labels and renderers
+        for (i = this.channels.length; i < this.pixiChannelLabels.length; i++) {
+          this.pixiChannelLabels[i].visible = false;
+          this.channelRenderers[i].setActive(false);
+        }
+
+        if (this.isRecording) {
+          this.pixiNotRecordingWatermark.visible = false;
+        } else {
+          let wmBounds = this.pixiNotRecordingWatermark.getLocalBounds();
+          this.pixiNotRecordingWatermark.x = (this.dims.width - this.dims.marginLeft - this.dims.marginRight - wmBounds.width) / 2 + this.dims.marginLeft;
+          this.pixiNotRecordingWatermark.y = (this.dims.height - this.dims.marginBottom - wmBounds.height) / 2;
+          this.pixiNotRecordingWatermark.visible = true;
+        }
+
+        // y axis label
+        this.pixiYLabel.text = this.viewOptions.yLabel;
+        let yLabelBounds = this.pixiYLabel.getLocalBounds();
+        this.pixiYLabel.x = (this.dims.marginLeft - yLabelBounds.width) / 2;
+        this.pixiYLabel.y = this.dims.height / 2 - yLabelBounds.height / 2;
+
+        // Create text objects for x axis ticks and labels if needed
+        // Add one for the last label
+        let xTickCount = (this.viewOptions.xMax - this.viewOptions.xMin) / this.viewOptions.xTickWidth + 1;
+        let xTickWidth = xTickCount > 0 ?
+          (this.dims.width - this.dims.marginLeft - this.dims.marginRight) / (xTickCount - 1) : 0;
+        xTickCount = Math.floor(xTickCount);
+
+        if (this.pixiXTickLabels.length < xTickCount) {
+          for (i = this.pixiXTickLabels.length; i < xTickCount; i++) {
+            this.pixiXTickLabels.push(new PIXI.Text('', this.labelTextStyle));
+            g.addChild(this.pixiXTickLabels[i]);
+          }
+        }
+        for (i = 0; i < xTickCount; i++) {
+          this.pixiXTickLabels[i].text = String(this.viewOptions.xMin + i * this.viewOptions.xTickWidth);
+        }
+        this.pixiXLabel.text = this.viewOptions.xLabel;
+
+        // Draw x axis ticks and labels
+        let xTickLabels = this.pixiXTickLabels;
+        if (xTickCount) {
+          g.lineStyle(1, lineColor);
+          for (i = 0; i < xTickCount; i++) {
+            g.moveTo(i * xTickWidth + this.dims.marginLeft, 0);
+            g.lineTo(i * xTickWidth + this.dims.marginLeft, this.dims.height - this.dims.marginBottom);
+
+            let bounds = xTickLabels[i].getLocalBounds();
+            xTickLabels[i].x = i * xTickWidth - bounds.width / 2 + this.dims.marginLeft;
+            xTickLabels[i].y = this.dims.height - this.dims.marginBottom;
+            xTickLabels[i].visible = true;
+          }
+        }
+
+        // hide unused labels
+        for (i = xTickCount; i < xTickLabels.length; i++) {
+          xTickLabels[i].visible = false;
+        }
+
+        // x axis label
+        let xLabelBounds = this.pixiXLabel.getLocalBounds();
+        this.pixiXLabel.x = this.dims.width / 2 - xLabelBounds.width / 2;
+        this.pixiXLabel.y = this.dims.height - xLabelBounds.height;
+      }
+      renderCursor() {
+        this.pixiCursor.clear();
+        if (this.cursor) {
+          this.pixiCursor.lineStyle(1, this.cursorLineColor);
+          this.pixiCursor.moveTo(this.cursor.x, 0);
+          this.pixiCursor.lineTo(this.cursor.x, this.dims.height);
+        }
+      }
+      renderLoop() {
+        for (let i = 0; i < this.channels.length; i++) {
+          this.channelRenderers[i].render(this.viewOptions, this.cursor, i == 0);
+        }
+        this.renderCursor();
+        this.renderer.render(this.pixiStage);
+        if (this.running) {
+          requestAnimationFrame(this.renderLoop.bind(this));
+        }
+      }
+      start() {
+        this.running = true;
+        this.renderLoop();
+      }
+      mousemoveHandler() {
+        let p = this.renderer.plugins.interaction.mouse.global;
+        for (let i = 0; i < this.channels.length; i++) {
+          if (p.y > this.channelDims[i].top &&
+              p.y < (this.channelDims[i].top + this.channelDims[i].height)) {
+            this.channelRenderers[i].setSelected(true);
+          } else {
+            this.channelRenderers[i].setSelected(false);
+          }
+          this.cursor = p;
+        }
+      }
+      resizeHandler() {
+        if (!this.renderer) {
+          return;
+        }
+        this.measure();
+        this.renderer.view.style.width = this.dims.width + 'px';
+        this.renderer.view.style.height = this.dims.height + 'px';
+        this.renderer.resize(this.dims.width, this.dims.height);
+        this.layout();
+      }
+      channelsChanged() {
+        if (!this.renderer) {
+          return;
+        }
+        this.measure();
+        this.layout();
+      }
+      viewOptionsChanged() {
+        if (!this.renderer) {
+          return;
+        }
+        this.layout();
+      }
+      isRecordingChanged() {
+        if (!this.renderer) {
+          return;
+        }
+        this.layout();
+      }
+      artifactChanged() {
+        for (let i = 0; i < this.channels.length; i++) {
+          if (this.artifact.isArtifact && this.artifact.channelsAffected.includes(i) && this.artifact.show) {
+            this.channelRenderers[i].setArtifacted(true);
+          } else {
+            this.channelRenderers[i].setArtifacted(false);
+          }
+        }
+      }
+    }
+
+    customElements.define(ChannelsPixiDisplay.is, ChannelsPixiDisplay);
+  </script>
+</dom-module>

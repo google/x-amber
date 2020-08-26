@@ -1,0 +1,229 @@
+{
+    "channelData": [
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "A"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "B"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "C"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "D"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "E"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "F"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "G"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "H"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "I"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "J"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "K"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "L"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "M"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "N"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "O"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "P"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Q"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "R"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "S"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "T"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "U"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "V"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "W"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "X"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Y"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Z"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "BB"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "CC"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "DD"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "EE"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "FF"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "GG"
+        }
+    ],
+    "name": "32 Channels"
+}

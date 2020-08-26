@@ -1,0 +1,354 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_Defines</name>
+      <values lines_count="1">
+        <Line>"FSL_OSA_BM_TIMER_CONFIG=2"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Linker_OtherC</name>
+      <value>-specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs</value>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="64">
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/src/clock/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/src/clock/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKL27Z4/include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKL27Z4/startup"</Line>
+        <Line>"${ProjDirPath}/Generated_Code/SDK/platform/devices/MKL27Z4/startup"</Line>
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ilg_gnuarmeclipse_managedbuild_cross_option_cpp_compiler_defs</name>
+      <values lines_count="1">
+        <Line>"CPU_MKL27Z256VLH4"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Linker_OtherCpp</name>
+      <value>-specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs</value>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Asm_Defines</name>
+      <values lines_count="1">
+        <Line>"FSL_OSA_BM_TIMER_CONFIG=2"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ilg_gnuarmeclipse_managedbuild_cross_option_c_compiler_defs</name>
+      <values lines_count="1">
+        <Line>"CPU_MKL27Z256VLH4"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_CompilerCpp_SearchUserPaths</name>
+      <values lines_count="64">
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/src/clock/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/src/clock/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/src/sim/MKL27Z4"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/system/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/osa/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/CMSIS/Include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKL27Z4/include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/hal/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/src"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/utilities/inc"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/MKL27Z4/startup"</Line>
+        <Line>"${ProjDirPath}/Generated_Code/SDK/platform/devices/MKL27Z4/startup"</Line>
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ToolChain_CompilerCpp_Defines</name>
+      <values lines_count="1">
+        <Line>"FSL_OSA_BM_TIMER_CONFIG=2"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Generated_Code/pin_mux.h" FileDate="2018-12-11, 13:33:46" FileAge="1544564026276" FileType="45637" CompNumb="9" />
+      <File Name="SDK/platform/hal/inc/fsl_sim_hal.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820294" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2018-12-11, 13:33:46" FileAge="1544564026314" FileType="45637" CompNumb="9" />
+      <File Name="SDK/platform/hal/inc/fsl_gpio_hal.h" FileDate="2018-11-26, 12:55:24" FileAge="1543265724148" FileType="1048576" CompNumb="0" />
+      <File Name="Documentation/doxygen/Luchador Serial Fimware KL27_project.txt" FileDate="2018-11-26, 10:10:20" FileAge="1543255820927" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/inc/fsl_adc16_hal.h" FileDate="2018-12-11, 13:33:45" FileAge="1544564025570" FileType="1048576" CompNumb="68" />
+      <File Name="SDK/platform/hal/src/dmamux/fsl_dmamux_hal.c" FileDate="2018-12-08, 16:20:07" FileAge="1544314807607" FileType="1048576" CompNumb="63" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/gpio/fsl_gpio_common.c" FileDate="2018-11-26, 12:55:24" FileAge="1543265724192" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/inc/fsl_dma_driver.h" FileDate="2018-12-08, 16:20:07" FileAge="1544314807720" FileType="1048576" CompNumb="62" />
+      <File Name="SDK/platform/utilities/src/fsl_debug_console.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820803" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/hal/src/port/fsl_port_hal.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820491" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/dmaController1.h" FileDate="2018-12-08, 16:36:39" FileAge="1544315799137" FileType="45637" CompNumb="62" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/dmaController1.c" FileDate="2018-12-08, 16:36:39" FileAge="1544315799206" FileType="45637" CompNumb="62" />
+      <File Name="Generated_Code/spiCom1.h" FileDate="2018-11-26, 17:23:21" FileAge="1543281801611" FileType="45637" CompNumb="17" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/dma/fsl_dma_driver.c" FileDate="2018-12-08, 16:20:07" FileAge="1544314807708" FileType="1048576" CompNumb="62" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.ld" FileDate="2018-11-26, 18:39:58" FileAge="1543286398124" FileType="8" />
+      <File Name="Generated_Code/spiCom1.c" FileDate="2018-11-26, 17:23:21" FileAge="1543281801623" FileType="45637" CompNumb="17" />
+      <File Name="SDK/platform/hal/src/lpuart/fsl_lpuart_hal.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820782" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/src/pit/fsl_pit_driver.c" FileDate="2018-11-26, 13:37:52" FileAge="1543268272179" FileType="1048576" CompNumb="33" />
+      <File Name="SDK/platform/utilities/src/print_scan.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820826" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/utilities/inc/fsl_debug_console.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820832" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/utilities/src/print_scan.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820821" FileType="1048576" CompNumb="2" />
+      <File Name="Sources/Events.h" FileDate="2018-12-13, 15:03:46" FileAge="1544742226733" FileType="131328" />
+      <File Name="Sources/Events.c" FileDate="2018-12-13, 15:03:46" FileAge="1544742226750" FileType="131328" />
+      <File Name="SDK/platform/CMSIS/Include/core_cmFunc.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820620" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/CMSIS/Include/arm_const_structs.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820647" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_FTFx_Common.h" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/inc/fsl_uart_hal.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820771" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/hal/inc/fsl_rtc_hal.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820375" FileType="1048576" CompNumb="8" />
+      <File Name="SDK/platform/CMSIS/Include/core_cmSimd.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820606" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/hal/inc/fsl_lpuart_hal.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820791" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/pitTimer1.h" FileDate="2018-11-26, 13:37:52" FileAge="1543268272296" FileType="45637" CompNumb="33" />
+      <File Name="SDK/platform/hal/inc/fsl_spi_hal.h" FileDate="2018-11-26, 11:48:09" FileAge="1543261689040" FileType="1048576" CompNumb="18" />
+      <File Name="SDK/platform/system/src/interrupt/fsl_interrupt_manager.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820507" FileType="1048576" CompNumb="15" />
+      <File Name="Generated_Code/pitTimer1.c" FileDate="2018-11-26, 13:37:52" FileAge="1543268272291" FileType="45637" CompNumb="33" />
+      <File Name="SDK/platform/hal/inc/fsl_port_hal.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820501" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/src/lpuart/fsl_lpuart_driver.c" FileDate="2018-12-08, 18:45:52" FileAge="1544323552075" FileType="1048576" CompNumb="65" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/adc16/fsl_adc16_common.c" FileDate="2018-12-11, 13:33:45" FileAge="1544564025580" FileType="1048576" CompNumb="67" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/src/adc16/fsl_adc16_hal.c" FileDate="2018-12-11, 13:33:45" FileAge="1544564025544" FileType="1048576" CompNumb="68" />
+      <File Name="SDK/platform/hal/src/mcglite/fsl_mcglite_hal.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820220" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/DataUart.h" FileDate="2018-12-08, 16:34:56" FileAge="1544315696885" FileType="45637" CompNumb="60" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/DataUart.c" FileDate="2018-12-08, 16:34:56" FileAge="1544315696879" FileType="45637" CompNumb="60" />
+      <File Name="SDK/platform/utilities/inc/fsl_misc_utilities.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820837" FileType="1048576" CompNumb="2" />
+      <File Name="Documentation/Luchador Serial Fimware KL27_Settings.xml" FileDate="2018-12-13, 15:03:46" FileAge="1544742226940" FileType="3072" />
+      <File Name="SDK/platform/hal/src/rtc/fsl_rtc_hal.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820364" FileType="1048576" CompNumb="8" />
+      <File Name="Generated_Code/MarkUart.h" FileDate="2018-12-08, 18:45:52" FileAge="1544323552229" FileType="45637" CompNumb="65" />
+      <File Name="Generated_Code/MarkUart.c" FileDate="2018-12-08, 18:45:52" FileAge="1544323552236" FileType="45637" CompNumb="65" />
+      <File Name="SDK/platform/hal/src/dma/fsl_dma_hal.c" FileDate="2018-12-08, 16:20:07" FileAge="1544314807656" FileType="1048576" CompNumb="64" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2018-12-13, 15:03:46" FileAge="1544742226710" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/fsl_pit_driver.h" FileDate="2018-11-26, 13:37:52" FileAge="1543268272196" FileType="1048576" CompNumb="33" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2018-12-13, 15:03:46" FileAge="1544742226716" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/hal/src/mcglite/fsl_mcglite_hal_modes.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820229" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/CMSIS/Include/core_cm0plus.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820595" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/system/src/clock/MKL27Z4/fsl_clock_MKL27Z4.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820458" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/inc/fsl_spi_master_driver.h" FileDate="2018-11-26, 11:48:09" FileAge="1543261689071" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_FTFx.h" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/system/src/clock/MKL27Z4/fsl_clock_MKL27Z4.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820445" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/devices/fsl_device_registers.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820669" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/hal/src/pit/fsl_pit_hal.c" FileDate="2018-11-26, 13:37:52" FileAge="1543268272107" FileType="1048576" CompNumb="34" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_Types.h" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Documentation/doxygen/pex.css" FileDate="2018-11-26, 10:10:19" FileAge="1543255819965" FileType="16384" CompNumb="2" />
+      <File Name="SDK/platform/utilities/src/fsl_misc_utilities.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820813" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/include/FTFx_KX_flash_config.h" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/Adc.h" FileDate="2018-12-13, 12:35:52" FileAge="1544733352521" FileType="45637" CompNumb="67" />
+      <File Name="Generated_Code/HardwareVersion.h" FileDate="2018-11-26, 13:48:17" FileAge="1543268897293" FileType="45637" CompNumb="35" />
+      <File Name="Generated_Code/SDK/platform/devices/MKL27Z4/startup/system_MKL27Z4.h" FileDate="2018-12-03, 19:48:16" FileAge="1543895296643" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/spi/fsl_spi_master_driver.c" FileDate="2018-11-26, 11:48:09" FileAge="1543261689051" FileType="1048576" CompNumb="17" />
+      <File Name="Generated_Code/Adc.c" FileDate="2018-12-13, 12:35:52" FileAge="1544733352587" FileType="45637" CompNumb="67" />
+      <File Name="Generated_Code/HardwareVersion.c" FileDate="2018-11-26, 19:24:33" FileAge="1543289073874" FileType="45637" CompNumb="35" />
+      <File Name="Generated_Code/osa1.h" FileDate="2018-11-26, 10:10:21" FileAge="1543255821004" FileType="45637" CompNumb="42" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/osa1.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820975" FileType="45637" CompNumb="42" />
+      <File Name="SDK/platform/devices/startup.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820844" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/inc/fsl_dmamux_hal.h" FileDate="2018-12-08, 16:20:07" FileAge="1544314807611" FileType="1048576" CompNumb="63" />
+      <File Name="SDK/platform/devices/startup.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820840" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/spi/fsl_spi_slave_driver.c" FileDate="2018-11-26, 11:48:09" FileAge="1543261689061" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/drivers/src/gpio/fsl_gpio_driver.c" FileDate="2018-11-26, 12:55:24" FileAge="1543265724207" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/osa/inc/fsl_os_abstraction.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820563" FileType="1048576" CompNumb="42" />
+      <File Name="SDK/platform/osa/inc/fsl_os_abstraction_bm.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820570" FileType="1048576" CompNumb="42" />
+      <File Name="SDK/platform/devices/MKL27Z4/include/MKL27Z4_features.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820749" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/devices/MKL27Z4/include/fsl_bitaccess.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820678" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/src/uart/fsl_uart_hal.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820762" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/inc/fsl_dma_hal.h" FileDate="2018-12-08, 16:20:07" FileAge="1544314807677" FileType="1048576" CompNumb="64" />
+      <File Name="SDK/platform/devices/MKL27Z4/startup/gcc/startup_MKL27Z4.S" FileDate="2018-11-26, 10:10:20" FileAge="1543255820859" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/CMSIS/Include/arm_math.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820658" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/spi/fsl_spi_shared_function.c" FileDate="2018-11-26, 11:48:09" FileAge="1543261689055" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/hal/src/gpio/fsl_gpio_hal.c" FileDate="2018-11-26, 12:55:24" FileAge="1543265724141" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/src/dma/fsl_dma_common.c" FileDate="2018-12-08, 16:20:07" FileAge="1544314807686" FileType="1048576" CompNumb="62" />
+      <File Name="SDK/platform/drivers/src/spi/fsl_spi_common.c" FileDate="2018-11-26, 11:48:09" FileAge="1543261689045" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/drivers/src/pit/fsl_pit_common.c" FileDate="2018-11-26, 13:37:52" FileAge="1543268272161" FileType="1048576" CompNumb="33" />
+      <File Name="Documentation/doxygen/RoutingReport_component.txt" FileDate="2018-12-08, 17:32:03" FileAge="1544319123265" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/system/inc/fsl_interrupt_manager.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820511" FileType="1048576" CompNumb="15" />
+      <File Name="SDK/platform/drivers/src/adc16/fsl_adc16_driver.c" FileDate="2018-12-11, 13:33:45" FileAge="1544564025592" FileType="1048576" CompNumb="67" />
+      <File Name="SDK/platform/hal/inc/fsl_mcglite_hal.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820241" FileType="1048576" CompNumb="0" />
+      <File Name="Generated_Code/RgbLed.h" FileDate="2018-11-26, 12:55:24" FileAge="1543265724321" FileType="45637" CompNumb="22" />
+      <File Name="SDK/platform/hal/src/sim/MKL27Z4/fsl_sim_hal_MKL27Z4.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820333" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/inc/fsl_lpuart_dma_driver.h" FileDate="2018-12-08, 16:34:56" FileAge="1544315696732" FileType="1048576" CompNumb="60" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/hardware_init.c" FileDate="2018-12-11, 13:33:46" FileAge="1544564026336" FileType="45637" CompNumb="9" />
+      <File Name="Generated_Code/RgbLed.c" FileDate="2018-11-26, 12:55:24" FileAge="1543265724316" FileType="45637" CompNumb="22" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/src/sim/MKL27Z4/fsl_sim_hal_MKL27Z4.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820320" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2018-11-26, 10:10:20" FileAge="1543255820913" FileType="45637" CompNumb="2" />
+      <File Name="Generated_Code/AuxGpio.h" FileDate="2018-12-08, 13:52:28" FileAge="1544305948635" FileType="45637" CompNumb="54" />
+      <File Name="SDK/platform/drivers/inc/fsl_adc16_driver.h" FileDate="2018-12-11, 14:48:05" FileAge="1544568485250" FileType="1048576" CompNumb="67" />
+      <File Name="SDK/platform/drivers/src/lpuart/fsl_lpuart_common.c" FileDate="2018-12-08, 16:34:56" FileAge="1544315696717" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/system/src/clock/fsl_clock_manager.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820414" FileType="1048576" CompNumb="3" />
+      <File Name="Generated_Code/AuxGpio.c" FileDate="2018-12-08, 13:52:28" FileAge="1544305948630" FileType="45637" CompNumb="54" />
+      <File Name="ProjectInfo.xml" FileDate="2018-12-13, 15:03:47" FileAge="1544742227951" FileType="45637" />
+      <File Name="SDK/platform/drivers/inc/fsl_spi_shared_function.h" FileDate="2018-11-26, 11:48:09" FileAge="1543261689065" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/CMSIS/Include/arm_common_tables.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820642" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/src/osc/fsl_osc_hal.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820345" FileType="1048576" CompNumb="7" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/inc/fsl_pit_hal.h" FileDate="2018-11-26, 13:37:52" FileAge="1543268272112" FileType="1048576" CompNumb="34" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/fsl_lpuart_driver.h" FileDate="2018-12-08, 18:45:52" FileAge="1544323552099" FileType="1048576" CompNumb="65" />
+      <File Name="Documentation/Luchador Serial Fimware KL27.txt" FileDate="2018-12-13, 15:03:47" FileAge="1544742227973" FileType="3072" />
+      <File Name="SDK/platform/devices/MKL27Z4/include/MKL27Z4.h" FileDate="2018-12-03, 21:11:02" FileAge="1543900262898" FileType="1048576" CompNumb="2" />
+      <File Name="Generated_Code/board.h" FileDate="2018-12-03, 16:24:14" FileAge="1543883054957" FileType="45637" CompNumb="9" />
+      <File Name="SDK/platform/CMSIS/Include/core_cmInstr.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820636" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/system/inc/fsl_clock_manager.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820473" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/rtc/fsl_rtc_common.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820484" FileType="1048576" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="SDK/platform/hal/src/spi/fsl_spi_hal.c" FileDate="2018-11-26, 11:48:09" FileAge="1543261689032" FileType="1048576" CompNumb="18" />
+      <File Name="Generated_Code/PE_low_level_init.h" FileDate="2018-11-26, 15:13:07" FileAge="1543273987048" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/hal/inc/fsl_mcglite_hal_modes.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820284" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/drivers/inc/fsl_spi_slave_driver.h" FileDate="2018-11-26, 11:48:09" FileAge="1543261689078" FileType="1048576" CompNumb="17" />
+      <File Name="SDK/platform/hal/inc/fsl_osc_hal.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820351" FileType="1048576" CompNumb="7" />
+      <File Name="Generated_Code/GpioEeg.h" FileDate="2018-11-26, 16:52:33" FileAge="1543279953357" FileType="45637" CompNumb="28" />
+      <File Name="Generated_Code/StatusLed.h" FileDate="2018-11-26, 13:08:27" FileAge="1543266507540" FileType="45637" CompNumb="25" />
+      <File Name="SDK/platform/drivers/inc/fsl_gpio_driver.h" FileDate="2018-11-26, 12:55:24" FileAge="1543265724220" FileType="1048576" CompNumb="0" />
+      <File Name="SDK/platform/osa/src/fsl_os_abstraction_bm.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820545" FileType="1048576" CompNumb="42" />
+      <File Name="SDK/platform/system/src/clock/fsl_clock_manager_common.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820421" FileType="1048576" CompNumb="3" />
+      <File Name="Generated_Code/GpioEeg.c" FileDate="2018-11-26, 16:52:33" FileAge="1543279953368" FileType="45637" CompNumb="28" />
+      <File Name="Generated_Code/StatusLed.c" FileDate="2018-11-26, 13:08:27" FileAge="1543266507535" FileType="45637" CompNumb="25" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Static_Code/System/PE_low_level_init.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820876" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/devices/MKL27Z4/include/MKL27Z4_extension.h" FileDate="2018-11-26, 10:10:20" FileAge="1543255820738" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/flash/C90TFS/drvsrc/include/SSD_FTFx_Internal.h" FileDate="1969-12-31, 15:59:59" FileAge="-1" FileType="1048576" />
+      <File Name="Generated_Code/clockMan1.h" FileDate="2018-11-26, 10:10:21" FileAge="1543255821186" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/lpuart/fsl_lpuart_dma_driver.c" FileDate="2018-12-08, 16:34:56" FileAge="1544315696725" FileType="1048576" CompNumb="60" />
+      <File Name="Generated_Code/clockMan1.c" FileDate="2018-11-26, 10:10:21" FileAge="1543255821075" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/devices/MKL27Z4/startup/system_MKL27Z4.c" FileDate="2018-11-26, 10:10:20" FileAge="1543255820869" FileType="1048576" CompNumb="2" />
+      <File Name="SDK/platform/drivers/inc/fsl_dma_request.h" FileDate="2018-12-08, 16:20:07" FileAge="1544314807733" FileType="1048576" CompNumb="62" />
+      <File Name="Sources/main.c" FileDate="2018-12-13, 15:03:46" FileAge="1544742226693" FileType="128" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>46</CodeGenReference>
+</CodeGenerationInfo>

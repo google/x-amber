@@ -1,0 +1,295 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+
+<link rel="import" href="channels-pixi-display.html">
+
+<dom-module id="channels-view">
+
+  <template>
+
+    <style>
+      :host {
+        position: relative;
+      }
+      channels-pixi-display {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 64px;
+      }
+      app-toolbar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: var(--secondary-text-color);
+        @apply --paper-font-caption;
+      }
+      app-toolbar paper-toggle-button {
+        margin-left: 12px;
+      }
+      app-toolbar paper-checkbox {
+        margin-left: 12px;
+      }
+      paper-icon-button.mode {
+        opacity: 0.23;
+      }
+      paper-icon-button.mode[disabled] {
+        opacity: 1;
+      }
+      .scale-y-input {
+        width: 5em;
+      }
+      .flex {
+        @apply --layout-flex;
+      }
+      .spacer {
+        border-left: solid 1px var(--secondary-text-color);
+        margin: 0 16px;
+      }
+      .artifact-warning-wrapper-div {
+        border-radius: 20px;
+        background-color: #ffc400;
+      }
+      .artifact-ok-wrapper-div {
+        border-radius: 20px;
+        background-color: #08c136bd;
+      }
+      .artifact-inner-div {
+        padding: 5px 12px 5px 12px;
+      }
+      .artifact-icon {
+        color: white;
+      }
+      .artifact-text {
+        font-weight: 800;
+        font-size: 16px;
+        color: white;
+      }
+
+    </style>
+
+    <channels-pixi-display id="pixi" channels="[[activeChannels]]" dataer="[[dataer]]" view-options="[[viewOptions]]" is-recording="[[isRecording]]" artifact="[[artifact]]"></channels-pixi-display>
+
+    <app-toolbar>
+      <paper-icon-button id="freq" class="mode" src="images/ic_graphic_eq_black_24px.svg" noink disabled="[[isFrequencyDomain(viewOptions.mode)]]" on-click="viewModeHandler"></paper-icon-button>
+      <paper-icon-button id="time" class="mode" src="images/ic_schedule_black_24px.svg" noink disabled="[[isTimeDomain(viewOptions.mode)]]" on-click="viewModeHandler"></paper-icon-button>
+      <span class="spacer">&nbsp;</span>
+      <span>Filter</span>
+      <paper-toggle-button on-iron-change="filterHandler"></paper-toggle-button>
+
+      <template is="dom-if" if="[[isTimeDomain(viewOptions.mode)]]">
+        <span class="spacer">&nbsp;</span>
+        <span>Auto Baseline</span>
+        <paper-toggle-button checked="[[isAutoBaseline(viewOptions.modeOptions)]]" on-iron-change="autoBaselineHandler"></paper-toggle-button>
+        <template is="dom-if" if="[[isAutoBaseline(viewOptions.modeOptions)]]">
+          <span>Continuous</span>
+          <paper-checkbox checked="[[isContinuousBaseline(viewOptions.modeOptions)]]" on-iron-change="continuousBaselineHandler"></paper-checkbox>
+        </template>
+      </template>
+
+        <span class="spacer">&nbsp;</span>
+        <span>Artifact Detection</span>
+        <paper-toggle-button checked="1" on-iron-change="artifactDetectionHandler"></paper-toggle-button>
+
+        <div class="flex"></div>
+        <div hidden="[[!artifact.show]]">
+          <div class="artifact-ok-wrapper-div" hidden="[[artifact.isArtifact]]">
+            <div class="artifact-inner-div">
+                <iron-icon class="artifact-icon" icon="check-circle"></iron-icon>
+                <span class="artifact-text">Artifact free</span>
+            </div>
+          </div>
+          <div class="artifact-warning-wrapper-div" hidden="[[!artifact.isArtifact]]">
+            <div class="artifact-inner-div">
+                <iron-icon class="artifact-icon" icon="error-outline"></iron-icon>
+                <span class="artifact-text">[[artifact.text]]</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex"></div>
+      <template is="dom-if" if="[[isTimeDomain(viewOptions.mode)]]">
+        <paper-icon-button icon="zoom-out" on-click="zoomOutHandler"></paper-icon-button>
+        <paper-icon-button icon="zoom-in" on-click="zoomInHandler"></paper-icon-button>
+        <paper-input class="scale-y-input" type="number" value="{{yRange}}" on-input="scaleYInputHandler" on-change="scaleYChangeHandler" no-label-float></paper-input>
+        <span>uV (Peak-To-Peak Amplitude)</span>
+      </template>
+    </app-toolbar>
+
+  </template>
+
+  <script>
+    'use strict';
+
+    class ChannelsView extends Polymer.MutableData(Polymer.Element) {
+      static get is() {
+        return 'channels-view';
+      }
+      static get properties() {
+        return {
+          dataer: {
+            type: Object,
+          },
+          preset: {
+            type: Object,
+            observer: 'presetChanged',
+          },
+          activeChannels: {
+            type: Array,
+          },
+          viewOptions: {
+            type: Object,
+          },
+          yRange: {
+            type: Number,
+            value() {
+              return 1000;
+            }
+          },
+          isRecording: {
+            type: Boolean,
+          },
+          artifact: {
+            type: Object,
+            value() {
+              return {
+                isArtifact: false,
+                show: true
+              }
+            }
+          }
+        };
+      }
+      isFrequencyDomain(mode) {
+        return mode == 'frequency';
+      }
+      isTimeDomain(mode) {
+        return mode == 'time';
+      }
+      isAutoBaseline(modeOptions) {
+        return modeOptions == 'autobaseline' || modeOptions == 'autobaseline-continuous';
+      }
+      isContinuousBaseline(modeOptions) {
+        return modeOptions == 'autobaseline-continuous';
+      }
+      constructor() {
+        super();
+        this.timeOptions = {
+          mode: 'time',
+          modeOptions: 'autobaseline-continuous',
+          xMin: 0,
+          xMax: 5,
+          xTickWidth: 1,
+          xLabel: 'time (seconds)',
+          yMin: 0 - (this.yRange / 2),
+          yMax: this.yRange / 2,
+          yTickWidth: this.yRange / 2,
+          yLabel: 'uV',
+        };
+        this.frequencyOptions = {
+          mode: 'frequency',
+          modeOptions: null,
+          xMin: 0,
+          xMax: 127,
+          xTickWidth: 20,
+          xLabel: 'frequency (hz)',
+          yMin: 0,
+          yMax: 100,
+          yTickWidth: 0,
+          yLabel: '%',
+        }
+        this.viewOptions = this.timeOptions;
+      }
+      start() {
+        this.$.pixi.start();
+      }
+      viewModeHandler(e) {
+        if (e.target == this.$.time) {
+          this.viewOptions = this.timeOptions;
+        } else {
+          this.viewOptions = this.frequencyOptions;
+        }
+      }
+      filterHandler(e) {
+        this.dispatchEvent(new CustomEvent('filter-change', {detail: !!e.target.checked}));
+      }
+      artifactDetectionHandler(e) {
+        this.set('artifact.show', e.target.checked);
+      }
+      autoBaselineHandler(e) {
+        if (e.target.checked) {
+          if (!this.isAutoBaseline(this.viewOptions.modeOptions)) {
+            this.viewOptions.modeOptions = 'autobaseline';
+          }
+        } else {
+          this.viewOptions.modeOptions = 'none';
+        }
+        this.notifyPath('viewOptions');
+      }
+      continuousBaselineHandler(e) {
+        if (e.target.checked) {
+          this.viewOptions.modeOptions = 'autobaseline-continuous';
+        } else {
+          this.viewOptions.modeOptions = 'autobaseline';
+        }
+        this.notifyPath('viewOptions');
+      }
+      scaleYInputHandler(e) {
+        let val = e.target.value;
+        if (val.length > 4) {
+          e.target.value = val.substring(0, val.length - 1);
+        }
+      }
+      scaleYChangeHandler() {
+        if (this.yRange == '') {
+          this.yRange = 0;
+        }
+        if (this.viewOptions.mode != 'time') {
+          return;
+        }
+        this.yRange = parseInt(this.yRange);
+        this.timeOptions.yMin = 0 - this.yRange / 2;
+        this.timeOptions.yMax = this.yRange / 2;
+        this.timeOptions.yTickWidth = this.yRange / 2;
+        this.viewOptions = this.timeOptions;
+      }
+      zoomOutHandler() {
+        this.yRange = parseInt(this.yRange);
+        this.yRange += 50;
+        this.scaleYChangeHandler();
+      }
+      zoomInHandler() {
+        this.yRange = parseInt(this.yRange);
+        if (this.yRange > 50) {
+          this.yRange -= 50;
+          this.scaleYChangeHandler();
+        }
+      }
+      presetChanged() {
+        console.log('presetChanged', this.preset);
+        this.activeChannels = this.preset.channelData.filter(c => c.isOn);
+      }
+    }
+
+    customElements.define(ChannelsView.is, ChannelsView);
+  </script>
+</dom-module>

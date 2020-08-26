@@ -1,0 +1,88 @@
+*************************************************************
+FileName = Luchador Pcb.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\matrix\matrix
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\profile
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\stephdr
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_overlay\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_overlay\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_paste\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_paste\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_solder\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_solder\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_layer\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\top_layer\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\gnd_plane_1\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\gnd_plane_1\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\sl1_h_\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\sl1_h_\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\sl2_v_\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\sl2_v_\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\power\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\power\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_layer\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_layer\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_solder\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_solder\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_paste\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_paste\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_overlay\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\bottom_overlay\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\drill\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\drill\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\drill\tools
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\keep-out_layer\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\keep-out_layer\attrlist
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\comp_+_bot\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\layers\comp_+_bot\components
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\steps\pcb\eda\data
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\symbols\oval11.811x70.8661_225\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\symbols\oval11.811x70.8661_315\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\symbols\oval19.811x78.8661_225\features
+
+Generated File : D:\Work\Google Drive\Luchador\Electrical\Luchador Rev 3.2b\Outputs\Luchador R3.2b Production Files\ODB\odb\symbols\oval19.811x78.8661_315\features
+

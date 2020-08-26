@@ -1,0 +1,10 @@
+Output: Design Rules Check
+Type  : DRC
+From  : PCB Document [Luchador Pcb.PcbDoc]
+   Generated File[Luchador Pcb.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 6:01:46 PM On 3/15/2019

@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=NetC1_2 Pin=R1-2
+Change Component Footprint: Designator=R1 Old Footprint=RC0402N New Footprint=R0402
+Change Component Comment : Designator=U1 Old Comment=Part Number: AD8603AUJZ-R2 New Comment=AD8603AUJZ-R2
+Change Component Comment : Designator=R1 Old Comment=Part Number: RC0402JR-0710KL New Comment=
+Change component parameters: Designator = "R1"; Footprint = "R0402"; UniqueID = "\DDQWSRMM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Catagory"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "COMMON"; Value = "470-02401-00"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gecko"; Value = "470-02401-00"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "HelpURL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ID"; Value = "8355"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LOON"; Value = "470-02401-00"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFG"; Value = "PANASONIC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MFG P/N"; Value = "ERA-2AEB103X"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "1/16W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PROXY"; Value = "Use ID #8534"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Status"; Value = "Released"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "XPN"; Value = "470-02401-00"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC1_2 Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Net: Name=NetR1_2
+Added Member To Class: ClassName=2wire Member=Component C1 C0402C241J3GAC7867
+Added Room: Name=2wire

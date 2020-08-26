@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Luchador Pcb.PcbDoc   6/4/2019  10:48:49 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : 651-02461-01_NC Drill.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      6mil (0.152mm)                                            Round             806       PTH        0.00inch (0.00mm)
+T2      30mil (0.762mm)                                           Round             4         PTH        0.00inch (0.00mm)
+T3      35mil (0.889mm)                                           Round             68        PTH        0.00inch (0.00mm)
+T4      36mil (0.92mm)                                            Round             8         PTH        0.00inch (0.00mm)
+T5      40mil (1.016mm)                                           Round             30        PTH        0.00inch (0.00mm)
+T6      43mil (1.1mm)                                             Round             6         PTH        0.00inch (0.00mm)
+T7      45mil (1.143mm)                                           Round             13        PTH        0.00inch (0.00mm)
+T8      120mil (3.048mm)                                          Round             8         PTH        0.00inch (0.00mm)
+T9      125mil (3.175mm)                                          Round             2         PTH        0.00inch (0.00mm)
+T10     39mil (0.991mm)                                           Round             3         NPTH       0.00inch (0.00mm)
+T11     91mil (2.3mm)                                             Round             4         NPTH       0.00inch (0.00mm)
+T12     94mil (2.375mm)                                           Round             4         NPTH       0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              956
+
+Total Processing Time (hh:mm:ss) : 00:00:02

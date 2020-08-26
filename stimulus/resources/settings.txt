@@ -1,0 +1,13 @@
+# These dimensions are in centimeters and can be fractional (e.g. 12.5)
+# The values match the Dell Precision 5520
+monitor_width 35.5
+monitor_height 19.5
+
+# Mark settings
+mark_format brainometer # This can be either brainometer, byte, or parallelport
+#mark_parallelportaddress 0xD050
+#mark_serialportname COM1
+baud_rate 115200
+
+# Doors
+win_loss_width_cm 1

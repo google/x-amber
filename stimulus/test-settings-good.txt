@@ -1,0 +1,15 @@
+foo abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_\-/:%
+ bar  baz 
+# Comment
+# Empty lines after this (with some spaces)
+
+    
+
+# Tab spacing
+		zzz		xxx
+
+# Float
+aaa 123.5
+
+# Integer
+bbb  6789

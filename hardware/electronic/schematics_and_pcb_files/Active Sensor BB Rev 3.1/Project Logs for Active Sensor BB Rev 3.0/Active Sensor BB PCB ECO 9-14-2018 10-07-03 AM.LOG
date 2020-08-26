@@ -1,0 +1,161 @@
+Added Component: Designator=J2(2-5174225-5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "3D Model"; Value = "2-5174225-5.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Connectors, Interconnects"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Style"; Value = "D-Type"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Cap, Male Pins"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish Thickness"; Value = "30µin (0.76µm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "Signal"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Description1"; Value = "CONNECTOR, PLUG, 1.27MM, 68WAY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dynamic Catalog"; Value = "AMPLIMITE .050 II Series"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "D-Sub Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Featured Product"; Value = "AMPLIMITE D-Subminiature Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Shielded"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Flange Feature"; Value = "Housing/Shell (M2.5); Latchblocks"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Housing Material"; Value = "Polybutylene Terephthalate (PBT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "2-5174225-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Through Hole, Right Angle"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "68"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Other Names"; Value = "A33476"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=21.57, 10=19.47, 50=17.49, 100=16.91, 1000=15.16, 10000=15.16 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Training Modules"; Value = "AMPLIMITE D-Sub Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Information"; Value = "2-5174225-5 Statement of Compliance"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "AMPLIMITE .050 II"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Shell Material, Finish"; Value = "Zinc, Nickel Plated"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Shell Size, Connector Layout"; Value = "0.050 Pitch x 0.100 Row to Row"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standard Package"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "983"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "571-2-5174225-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "100V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+2.5V Pin=J2-25
+Added Net: Name=+2.5V
+Added Pin To Net: NetName=+3.3V Pin=J2-27
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=+VSYS Pin=J2-28
+Added Net: Name=+VSYS
+Added Pin To Net: NetName=-2.5V Pin=J2-26
+Added Net: Name=-2.5V
+Added Pin To Net: NetName=AUX0 Pin=J2-32
+Added Net: Name=AUX0
+Added Pin To Net: NetName=AUX1 Pin=J2-66
+Added Net: Name=AUX1
+Added Pin To Net: NetName=AUX2 Pin=J2-61
+Added Net: Name=AUX2
+Added Pin To Net: NetName=AUX3 Pin=J2-62
+Added Net: Name=AUX3
+Added Pin To Net: NetName=BIAS Pin=J2-21
+Added Net: Name=BIAS
+Added Pin To Net: NetName=CH1 Pin=J2-59
+Added Net: Name=CH1
+Added Pin To Net: NetName=CH2 Pin=J2-58
+Added Net: Name=CH2
+Added Pin To Net: NetName=CH3 Pin=J2-57
+Added Net: Name=CH3
+Added Pin To Net: NetName=CH4 Pin=J2-56
+Added Net: Name=CH4
+Added Pin To Net: NetName=CH5 Pin=J2-55
+Added Net: Name=CH5
+Added Pin To Net: NetName=CH6 Pin=J2-54
+Added Net: Name=CH6
+Added Pin To Net: NetName=CH7 Pin=J2-53
+Added Net: Name=CH7
+Added Pin To Net: NetName=CH8 Pin=J2-52
+Added Net: Name=CH8
+Added Pin To Net: NetName=CH9 Pin=J2-51
+Added Net: Name=CH9
+Added Pin To Net: NetName=CH10 Pin=J2-50
+Added Net: Name=CH10
+Added Pin To Net: NetName=CH11 Pin=J2-49
+Added Net: Name=CH11
+Added Pin To Net: NetName=CH12 Pin=J2-48
+Added Net: Name=CH12
+Added Pin To Net: NetName=CH13 Pin=J2-47
+Added Net: Name=CH13
+Added Pin To Net: NetName=CH14 Pin=J2-46
+Added Net: Name=CH14
+Added Pin To Net: NetName=CH15 Pin=J2-45
+Added Net: Name=CH15
+Added Pin To Net: NetName=CH16 Pin=J2-44
+Added Net: Name=CH16
+Added Pin To Net: NetName=CH17 Pin=J2-43
+Added Net: Name=CH17
+Added Pin To Net: NetName=CH18 Pin=J2-42
+Added Net: Name=CH18
+Added Pin To Net: NetName=CH19 Pin=J2-41
+Added Net: Name=CH19
+Added Pin To Net: NetName=CH20 Pin=J2-40
+Added Net: Name=CH20
+Added Pin To Net: NetName=CH21 Pin=J2-39
+Added Net: Name=CH21
+Added Pin To Net: NetName=CH22 Pin=J2-38
+Added Net: Name=CH22
+Added Pin To Net: NetName=CH23 Pin=J2-37
+Added Net: Name=CH23
+Added Pin To Net: NetName=CH24 Pin=J2-36
+Added Net: Name=CH24
+Added Pin To Net: NetName=CH25- Pin=J2-10
+Added Net: Name=CH25-
+Added Pin To Net: NetName=CH25 Pin=J2-35
+Added Net: Name=CH25
+Added Pin To Net: NetName=CH26- Pin=J2-11
+Added Net: Name=CH26-
+Added Pin To Net: NetName=CH26 Pin=J2-1
+Added Net: Name=CH26
+Added Pin To Net: NetName=CH27- Pin=J2-12
+Added Net: Name=CH27-
+Added Pin To Net: NetName=CH27 Pin=J2-2
+Added Net: Name=CH27
+Added Pin To Net: NetName=CH28- Pin=J2-13
+Added Net: Name=CH28-
+Added Pin To Net: NetName=CH28 Pin=J2-3
+Added Net: Name=CH28
+Added Pin To Net: NetName=CH29- Pin=J2-14
+Added Net: Name=CH29-
+Added Pin To Net: NetName=CH29 Pin=J2-4
+Added Net: Name=CH29
+Added Pin To Net: NetName=CH30- Pin=J2-15
+Added Net: Name=CH30-
+Added Pin To Net: NetName=CH30 Pin=J2-5
+Added Net: Name=CH30
+Added Pin To Net: NetName=CH31- Pin=J2-16
+Added Net: Name=CH31-
+Added Pin To Net: NetName=CH31 Pin=J2-6
+Added Net: Name=CH31
+Added Pin To Net: NetName=CH32- Pin=J2-17
+Added Net: Name=CH32-
+Added Pin To Net: NetName=CH32 Pin=J2-7
+Added Net: Name=CH32
+Added Pin To Net: NetName=GND Pin=J2-8
+Added Pin To Net: NetName=GND Pin=J2-9
+Added Pin To Net: NetName=GND Pin=J2-18
+Added Pin To Net: NetName=GND Pin=J2-20
+Added Pin To Net: NetName=GND Pin=J2-22
+Added Pin To Net: NetName=GND Pin=J2-24
+Added Pin To Net: NetName=GND Pin=J2-29
+Added Pin To Net: NetName=GND Pin=J2-31
+Added Pin To Net: NetName=GND Pin=J2-34
+Added Pin To Net: NetName=GND Pin=J2-60
+Added Pin To Net: NetName=GND Pin=J2-63
+Added Pin To Net: NetName=GND Pin=J2-65
+Added Pin To Net: NetName=GND Pin=J2-68
+Added Net: Name=GND
+Added Pin To Net: NetName=I2C.SCL Pin=J2-33
+Added Net: Name=I2C.SCL
+Added Pin To Net: NetName=I2C.SDA Pin=J2-67
+Added Net: Name=I2C.SDA
+Added Pin To Net: NetName=REF Pin=J2-23
+Added Net: Name=REF
+Added Pin To Net: NetName=SHIELD Pin=J2-30
+Added Pin To Net: NetName=SHIELD Pin=J2-64
+Added Net: Name=SHIELD
+Added Pin To Net: NetName=SRB2 Pin=J2-19
+Added Net: Name=SRB2
+Added Class: Name=Active Sensor BB

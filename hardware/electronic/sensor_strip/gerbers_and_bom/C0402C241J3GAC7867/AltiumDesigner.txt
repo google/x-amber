@@ -1,0 +1,128 @@
+# Created by Ultra Librarian Gold 8.2.234 Copyright © 1999-2018
+# Frank Frank, Accelerated Designs
+
+StartFootprints
+
+Footprint (Name "G-155")
+Pad (Name "1") (Location -18.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 18, 20) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location 18.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 18, 20) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -37.5, -20) (End -37.5, 20) (Layer Mechanical15) 
+Line (Width 6) (Start -37.5, 20) (End 37.5, 20) (Layer Mechanical15) 
+Line (Width 6) (Start 37.5, 20) (End 37.5, -20) (Layer Mechanical15) 
+Line (Width 6) (Start 37.5, -20) (End -37.5, -20) (Layer Mechanical15) 
+Polygon (PointCount 4) (Layer Mechanical15) 
+Point (-37.5, -20)
+Point (-37.5, 20)
+Point (37.5, 20)
+Point (37.5, -20)
+EndPolygon
+Arc (Width 6) (Radius 3) (Location -60.5, 0) (StartAngle 0) (EndAngle 360) (Layer TopOverlay) 
+Line (Width 1) (Start -9.5, -10) (End -9.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -9.5, 10) (End -19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, 10) (End -19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, -10) (End -9.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 9.5, 10) (End 9.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 9.5, -10) (End 19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, -10) (End 19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, 10) (End 9.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, -10) (End 19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, -10) (End 19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, 10) (End -19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, 10) (End -19.5, -10) (Layer Mechanical13) 
+Arc (Width 0) (Radius 3) (Location -13.5, 0) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Step (Name G-155.stp)
+EndFootprint
+
+Footprint (Name "G-155-M")
+Pad (Name "1") (Location -20.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 22, 24) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location 20.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 22, 24) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -51.5, -32) (End -51.5, 32) (Layer Mechanical15) 
+Line (Width 6) (Start -51.5, 32) (End 51.5, 32) (Layer Mechanical15) 
+Line (Width 6) (Start 51.5, 32) (End 51.5, -32) (Layer Mechanical15) 
+Line (Width 6) (Start 51.5, -32) (End -51.5, -32) (Layer Mechanical15) 
+Polygon (PointCount 4) (Layer Mechanical15) 
+Point (-51.5, -32)
+Point (-51.5, 32)
+Point (51.5, 32)
+Point (51.5, -32)
+EndPolygon
+Arc (Width 6) (Radius 3) (Location -64.5, 0) (StartAngle 0) (EndAngle 360) (Layer TopOverlay) 
+Line (Width 1) (Start -9.5, -10) (End -9.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -9.5, 10) (End -19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, 10) (End -19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, -10) (End -9.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 9.5, 10) (End 9.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 9.5, -10) (End 19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, -10) (End 19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, 10) (End 9.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, -10) (End 19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, -10) (End 19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, 10) (End -19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, 10) (End -19.5, -10) (Layer Mechanical13) 
+Arc (Width 0) (Radius 3) (Location -15.5, 0) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Step (Name G-155-M.stp)
+EndFootprint
+
+Footprint (Name "G-155-L")
+Pad (Name "1") (Location -16.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 14, 20) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location 16.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 14, 20) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -27.5, -14) (End -27.5, 14) (Layer Mechanical15) 
+Line (Width 6) (Start -27.5, 14) (End 27.5, 14) (Layer Mechanical15) 
+Line (Width 6) (Start 27.5, 14) (End 27.5, -14) (Layer Mechanical15) 
+Line (Width 6) (Start 27.5, -14) (End -27.5, -14) (Layer Mechanical15) 
+Polygon (PointCount 4) (Layer Mechanical15) 
+Point (-27.5, -14)
+Point (-27.5, 14)
+Point (27.5, 14)
+Point (27.5, -14)
+EndPolygon
+Arc (Width 6) (Radius 3) (Location -56.5, 0) (StartAngle 0) (EndAngle 360) (Layer TopOverlay) 
+Line (Width 1) (Start -9.5, -10) (End -9.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -9.5, 10) (End -19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, 10) (End -19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, -10) (End -9.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 9.5, 10) (End 9.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 9.5, -10) (End 19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, -10) (End 19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, 10) (End 9.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, -10) (End 19.5, -10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, -10) (End 19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start 19.5, 10) (End -19.5, 10) (Layer Mechanical13) 
+Line (Width 1) (Start -19.5, 10) (End -19.5, -10) (Layer Mechanical13) 
+Arc (Width 0) (Radius 3) (Location -11.5, 0) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Step (Name G-155-L.stp)
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "GRM1555C1H120GA0") (PartCount 1) (DesPrefix "C?")
+Pin (Location 200, 0) (Rotation 0) (PinType Passive) (Length 100) (Width 0) (Designator Hidden "2") (Name Hidden "2") (PinSwap 1) (PartSwap 1) (PinSeq 2) (Part 1)
+Pin (Location 100, 0) (Rotation 180) (PinType Passive) (Length 100) (Width 0) (Designator Hidden "1") (Name Hidden "1") (PinSwap 1) (PartSwap 1) (PinSeq 1) (Part 1)
+Line (Width 8) (Start 137, -75) (End 137, 75) (Part 1)
+Line (Width 8) (Start 162, -75) (End 162, 75) (Part 1)
+Line (Width 8) (Start 162, 0) (End 200, 0) (Part 1)
+Line (Width 8) (Start 100, 0) (End 137, 0) (Part 1)
+Parameter (Name "Manufacturer_Part_Number") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "GRM1555C1H120GA01D") (Part 1)
+Parameter (Name "Vendor") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Murata") (Part 1)
+Parameter (Name "Built_By") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "EMA_UL_Team") (Part 1)
+Parameter (Name "RefDes") (Location 150, 150) (Height 137) (Rotation 0) (Justification Center) (Value "RefDes") (Part 1)
+Parameter (Name "Type") (Location 150, -300) (Height 137) (Rotation 0) (Justification Center) (Value "DEV") (Part 1)
+Parameter (Name "Value") (Location 150, -150) (Height 137) (Rotation 0) (Justification Center) (Value "Value") (Part 1)
+Parameter (Name "C") (Location 0, 0) (Height 1) (Rotation 0) (Justification Center) (Value "Copyright (C) 2015 Accelerated Designs. All rights reserved") (Part 1)
+Comment (Value "Part Number: GRM1555C1H120GA01D") (Part 1)
+Footprint (Name "G-155")
+EndComponent
+EndComponents

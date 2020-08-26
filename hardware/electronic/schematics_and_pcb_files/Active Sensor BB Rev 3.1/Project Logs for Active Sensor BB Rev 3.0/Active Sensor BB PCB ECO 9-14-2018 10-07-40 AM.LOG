@@ -1,0 +1,60 @@
+Added Component: Designator=J1(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J3(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J4(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J5(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J6(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J7(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J8(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J9(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J10(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Component: Designator=J11(38255)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "DESCRIPTION1"; Value = "TOUCHLESS CONNECTOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER"; Value = "PLASTICS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MANUFACTURER PART NUMBER"; Value = "38255"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Active Sensor BB Member=Component J1 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J3 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J4 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J5 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J6 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J7 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J8 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J9 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J10 CH 1
+Added Member To Class: ClassName=Active Sensor BB Member=Component J11 CH 1

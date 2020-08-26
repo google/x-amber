@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<PE_PROJECT_SETTINGS_DOCUMENTATION>
+  <PE_product_version v="version 10.5 for Freescale Microcontrollers" />
+  <PE_core_version v="Processor Expert Version 0521" />
+  <CPU_Bean name="Cpu" type="MKL27Z256LH4">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="Cpu" />
+      <CPU_type v="MKL27Z256VLH4" />
+      <fsl_clock_manager v="clockMan1" />
+      <group name="Low power mode settings">
+        <Acknowledge_isolation v="Allowed" />
+      </group>
+      <group name="Watchdog settings">
+        <Watchdog_disable v="yes" />
+      </group>
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <Event_module_name v="Events" />
+    </Events>
+    <Compiler v="GNU C Compiler" />
+    <CompilerProperties>
+      <Compiler v="GNU C Compiler" />
+      <boolgroup name="Generate linker file" v="no" />
+    </CompilerProperties>
+  </CPU_Bean>
+  <Bean name="clockMan1" type="fsl_clock_manager">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="clockMan1" />
+      <Device v="MCG" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="pin_mux" type="PinSettings">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="pin_mux" />
+      <PinSettings_IP_Block v="PinSettings" />
+      <Processor v="MKL27Z256LH4" />
+      <group name="Settings">
+        <enumgroup name="Clock gates initialization mode" v="SIM HAL (fsl_sim_hal component)">
+          <EmptySection_DummyValue />
+        </enumgroup>
+        <group name="Inherited HAL components">
+          <inhrbean type="fsl_port_hal">
+            <Enabled v="Y" />
+            <Properties>
+              <Component_name v="fsl_port_hal1" />
+              <Device v="PORTA" />
+              <Component_version v="1.3.0" />
+            </Properties>
+            <Methods>
+              <EmptySection_DummyValue />
+            </Methods>
+            <Events>
+              <EmptySection_DummyValue />
+            </Events>
+          </inhrbean>
+          <inhrbean type="fsl_sim_hal">
+            <Enabled v="Y" />
+            <Properties>
+              <Component_name v="fsl_sim_hal1" />
+              <Device v="SIM" />
+              <Component_version v="1.3.0" />
+            </Properties>
+            <Methods>
+              <EmptySection_DummyValue />
+            </Methods>
+            <Events>
+              <EmptySection_DummyValue />
+            </Events>
+          </inhrbean>
+          <inhrbean type="fsl_mcglite_hal">
+            <Enabled v="Y" />
+            <Properties>
+              <Component_name v="fsl_mcglite_hal1" />
+              <Device v="MCG" />
+              <Component_version v="1.3.0" />
+            </Properties>
+            <Methods>
+              <EmptySection_DummyValue />
+            </Methods>
+            <Events>
+              <EmptySection_DummyValue />
+            </Events>
+          </inhrbean>
+        </group>
+      </group>
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="intMan1" type="fsl_interrupt_manager">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="intMan1" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="spiCom1" type="fsl_spi">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="spiCom1" />
+      <Device v="SPI0" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="RgbLed" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="RgbLed" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="StatusLed" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="StatusLed" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="GpioEeg" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="GpioEeg" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="pitTimer1" type="fsl_pit">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="pitTimer1" />
+      <Device v="PIT" />
+      <Counter v="PIT_CVAL0" />
+      <Counter_type v="Down counter" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="HardwareVersion" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="HardwareVersion" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="osa1" type="fsl_os_abstraction">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="osa1" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="AuxGpio" type="fsl_gpio">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="AuxGpio" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="DataUart" type="fsl_lpuart">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="DataUart" />
+      <Device v="LPUART0" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="dmaController1" type="fsl_dma">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="dmaController1" />
+      <Device v="DMA" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="MarkUart" type="fsl_lpuart">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="MarkUart" />
+      <Device v="LPUART1" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+  <Bean name="Adc" type="fsl_adc16">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="Adc" />
+      <Device v="ADC0" />
+      <Component_version v="1.3.0" />
+    </Properties>
+    <Methods>
+      <EmptySection_DummyValue />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
+    </Events>
+  </Bean>
+</PE_PROJECT_SETTINGS_DOCUMENTATION>
+

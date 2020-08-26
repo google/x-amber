@@ -1,0 +1,11 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [PRODUCTION] of Project [Active Sensor BB Rev 3.1 (1).PrjPcb]
+   Generated File[651-02489-01_BOM.xls]
+   Generated File[651-02489-01_BOM.xls]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 9:30:17 PM On 5/15/2019

@@ -1,0 +1,16 @@
+Altium Designer Pick and Place Locations
+G:\My Drive\Amber\6. Hardware\2 Wire Sensor Board\Active Electrode_V2\Agile_Outputs\651-02728-01\Pick Place\651-02728-01_Pick Place.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       12/12/19
+Time:       22:12
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment                        Layer    Footprint Center-X(mil) Center-Y(mil) Rotation Description                   
+C1         C0402C241J3GAC7867             TopLayer G-155     165.000       40.000        0        Imported                      
+R1         "Part Number: RC0402JR-0710KL" TopLayer RC0402N   250.000       40.000        180      "RES, 10K, 0.1%, 1/16W, 0402" 
+U1         "Part Number: AD8603AUJZ-R2"   TopLayer UJ_5      205.000       145.000       0        "No Description Available"    

@@ -1,0 +1,7 @@
+{
+    "std": {"max": 150},
+    "mean": {"min": -1100, "max": 200},
+    "peakToPeak": {"max": 500},
+    "electricalBand": {"max": 4},
+    "broadBand": {"max": 3}
+}

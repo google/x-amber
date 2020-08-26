@@ -1,0 +1,104 @@
+<!--
+ Copyright 2020 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/iron-input/iron-input.html">
+
+<dom-module id="channels-settings">
+
+  <template>
+
+    <style>
+      :host {
+        @apply --layout-vertical;
+      }
+
+      .channel-item {
+        @apply --layout-horizontal;
+        @apply --layout-center;
+        padding: 8px 0;
+      }
+      .channel-index {
+        display: inline-block;
+        width: 16px;
+        text-align: right;
+      }
+      .channel-checkbox {
+        margin-left: 8px;
+      }
+      .channel-label {
+        @apply --layout-flex;
+        margin-left: 8px;
+      }
+      .save-button {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        margin-top: 16px;
+        width: 100%;
+      }
+    </style>
+
+    <template is="dom-repeat" items="{{preset.channelData}}">
+      <div class="channel-item">
+        <span class="channel-index">[[getIndex(index)]]</span>
+        <paper-checkbox id="enable" class="channel-checkbox" checked="{{item.isOn}}"></paper-checkbox>
+        <paper-input id="label" class="channel-label" value="{{item.label}}" no-label-float></paper-input>
+      </div>
+    </template>
+
+    <paper-input id="presetName" required label="New Preset Name" autofocus placeholder="Copy of [[preset.name]]"></paper-input>
+
+    <paper-button class="save-button" on-click="saveHandler">Save As New And Apply</paper-button>
+
+  </template>
+
+  <script>
+    'use strict';
+
+    class ChannelsSettings extends Polymer.Element {
+      static get is() {
+        return 'channels-settings';
+      }
+      static get properties() {
+        return {
+          preset: {
+            type: Object,
+          }
+        }
+      }
+      getIndex(index) {
+        return index + 1;
+      }
+      constructor() {
+        super();
+      }
+      saveHandler() {
+        console.log(this.$.presetName.value || this.$.presetName.placeholder);
+        this.preset.name = this.$.presetName.value || this.$.presetName.placeholder;
+        // TODO color is not supported
+        for (let i = 0; i < this.preset.channelData.length; i++) {
+          delete this.preset.channelData[i].color;
+        }
+        this.dispatchEvent(new CustomEvent('save-preset', {detail: this.preset}));
+      }
+    }
+
+    customElements.define(ChannelsSettings.is, ChannelsSettings);
+  </script>
+
+</dom-module>

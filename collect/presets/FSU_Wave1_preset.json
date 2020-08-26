@@ -1,0 +1,229 @@
+{
+    "channelData": [
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Right Earlobe"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Left Upper Eye"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Left Lower Eye"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Left Horizontal Eye"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Right Horizontal Eye"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Fz"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Cz"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": true,
+            "label": "Pz"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "I"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "J"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "K"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "L"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "M"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "N"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "O"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "P"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "Q"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "R"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "S"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "T"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "U"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "V"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "W"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "X"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "Y"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "Z"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "BB"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "CC"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "DD"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "EE"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "FF"
+        },
+        {
+            "gain": 24,
+            "isBiasNOn": true,
+            "isBiasPOn": true,
+            "isOn": false,
+            "label": "GG"
+        }
+    ],
+    "name": "FSU Wave 1"
+}

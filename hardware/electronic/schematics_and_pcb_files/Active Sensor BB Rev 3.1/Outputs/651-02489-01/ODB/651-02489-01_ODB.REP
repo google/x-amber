@@ -1,0 +1,80 @@
+*************************************************************
+FileName = Active Sensor BB.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\matrix\matrix
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\profile
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\stephdr
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_paste\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_paste\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\signal_layer_1\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\signal_layer_1\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\board_outline\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\board_outline\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\gnd_plane\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\gnd_plane\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_paste\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_paste\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\assembly\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\assembly\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_solder\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_solder\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_solder\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_solder\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_layer\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_layer\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_overlay\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\bottom_overlay\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_overlay\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_overlay\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\drill\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\drill\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\drill\tools
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_layer\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\top_layer\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\notes\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\notes\attrlist
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\comp_+_bot\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\comp_+_bot\components
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : G:\My Drive\Amber\6. Hardware\Bio-amplifier Schematics and PCB Files\Active Sensor BB Rev 3.1\Outputs\651-02489-01\ODB\odb\steps\pcb\eda\data
+

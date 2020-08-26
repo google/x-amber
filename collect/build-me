@@ -1,0 +1,5 @@
+git clean -xdf
+bower install
+yarn install
+./node_modules/.bin/electron-rebuild
+yarn run build
